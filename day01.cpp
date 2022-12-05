@@ -6,14 +6,13 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
-#include "dataDefs.h"
+#include <vector>
 
 //-----------------------------------------------------------------------------
 
 static const char cInputFileName[] = "input.txt";
 
-static std::vector<elfInfo> elves;
+static std::vector<int> elves;
 
 //-----------------------------------------------------------------------------
 
@@ -29,7 +28,7 @@ int loadInput(void)
     }
 
     bool nextElf = true;
-    elfInfo thisElf;
+    int thisElf;
     int total  = 0;
     int nElves = 0;
     while (!infile.eof())
@@ -38,7 +37,7 @@ int loadInput(void)
         getline(infile, line);
         if (line.length() < 1)
         {
-            thisElf.totalCalories = total;
+            thisElf = total;
             elves.push_back(thisElf);
             nextElf = true;
             total   = 0;
@@ -66,11 +65,10 @@ void part_1(void)
     int elfIdx = 1;
     for (auto elf : elves)
     {
-        int elfTotal = elf.totalCalories;
-        // std::cout << "Elf total cals = " << elfTotal << std::endl;
-        if (elfTotal > maxElf)
+        // std::cout << "Elf total cals = " << elf << std::endl;
+        if (elf > maxElf)
         {
-            maxElf = elfTotal;
+            maxElf = elf;
             nElf   = elfIdx;
         }
         elfIdx++;
@@ -84,27 +82,10 @@ void part_2(void)
 {
     std::cout << std::endl << "********** DAY 1, PART 2 **********" << std::endl;
 
-    std::vector<uint32_t> elfCals;
-
-    std::cout << "Elves' calories:" << std::endl;
-    for (auto elf : elves)
-    {
-        int cals = elf.totalCalories;
-        elfCals.push_back(cals);
-        std::cout << cals << " ";
-    }
-    std::cout << std::endl;
-
-    std::sort(elfCals.begin(), elfCals.end(), std::greater<int>());
-    std::cout << "Sorted elves' calories:" << std::endl;
-    for (auto cals : elfCals)
-    {
-        std::cout << cals << " ";
-    }
-    std::cout << std::endl;
+    std::sort(elves.begin(), elves.end(), std::greater<int>());
 
     // Add up the first three
-    int totalCals = elfCals[0] + elfCals[1] + elfCals[2];
+    int totalCals = elves[0] + elves[1] + elves[2];
     std::cout << "Sum of the top 3 elves' calories = " << totalCals << std::endl;
 }
 

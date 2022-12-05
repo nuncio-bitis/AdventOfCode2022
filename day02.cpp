@@ -10,8 +10,6 @@
 #include <map>
 #include <tuple>
 
-#include "dataDefs.h"
-
 //-----------------------------------------------------------------------------
 
 //static const char cInputFileName[] = "test.txt";

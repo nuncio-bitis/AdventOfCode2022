@@ -7,77 +7,117 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <map>
-#include <tuple>
-
-#include "dataDefs.h"
+#include <vector>
 
 //-----------------------------------------------------------------------------
 
 // static const char cInputFileName[] = "test.txt";
 static const char cInputFileName[] = "input05.txt";
 
+static std::ifstream infile(cInputFileName);
+
+// One stack is a vector of characters
+typedef std::vector<char> stack_type;
+// List of stacks
+static std::vector<stack_type> stacks;
+
+//-----------------------------------------------------------------------------
+
+void printStacks(void)
+{
+    std::cout << "Stacks:" << std::endl;
+    for (size_t i = 0; i < stacks.size(); ++i)
+    {
+        stack_type stk = stacks[i];
+        printf("%02zu : ", i+1);
+        for (auto crate : stk)
+        {
+            printf("%c ", crate);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+//-----------------------------------------------------------------------------
+
+void loadCrates(void)
+{
+    if (!infile)
+    {
+        std::cerr << "Error: unable to open input file: " << cInputFileName << std::endl;
+        exit(1);
+    }
+
+    size_t numStacks = 0;
+
+    std::cout << "Loading crates from input..." << std::endl;
+    bool firstLine = true;
+    std::string inputLine;
+    while (!infile.eof())
+    {
+        getline(infile, inputLine);
+        // Blank line means end of initial configuration of crates.
+        if (inputLine.length() == 0)
+        {
+            break;
+        }
+
+        // Use first line to compute number of stacks
+        // Each stack takes 4 chars: "[X] "
+        if (firstLine)
+        {
+            firstLine = false;
+            numStacks = (inputLine.size() + 1) / 4;
+            stacks.resize(numStacks);
+        }
+
+        // Load crates into stacks
+        for (size_t i = 0; i < numStacks; ++i)
+        {
+            size_t stackPos = (i * 4) + 1;
+            char crate = inputLine[stackPos];
+            // Ignore if crate is a number (last line)
+            if ((crate != ' ') && !((crate >= '0') && (crate <= '9')) )
+            {
+                stacks[i].emplace(stacks[i].begin(), crate);
+            }
+        }
+    }
+
+    std::cout << "Num stacks: " << stacks.size() << std::endl;
+}
+
 //-----------------------------------------------------------------------------
 
 // Premise...
 void part_1(void)
 {
-    std::cout << "Loading task pairs..." << std::endl;
-
-    std::ifstream infile(cInputFileName);
-    if (!infile)
-    {
-        std::cerr << "Error: unable to open input file: " << cInputFileName << std::endl;
-        return;
-    }
-
-    int total = 0;
+    std::cout << "Rearranging crates..." << std::endl;
 
     std::string inputLine;
     while (!infile.eof())
     {
         getline(infile, inputLine);
-
-        // Skip blank line.
+        // Blank line means end of initial configuration of crates.
         if (inputLine.length() == 0)
         {
-            continue;
+            break;
         }
 
-        // @TODO
-        int elf1L = 0;
-        int elf1H = 0;
-        int elf2L = 0;
-        int elf2H = 0;
+        int nMove = 0;
+        int from = 0;
+        int to = 0;
+        sscanf(inputLine.c_str(), "move %d from %d to %d", &nMove, &from, &to);
+        printf("* Move %d from %d to %d ...\n", nMove, from, to);
 
-        sscanf(inputLine.c_str(), "%d-%d,%d-%d", &elf1L, &elf1H, &elf2L, &elf2H);
-
-        if ((elf1H - elf1L) >= (elf2H - elf2L))
+        for (int n = 0; n < nMove; ++n)
         {
-            // Elf1 has the larger range
-            if ((elf2L >= elf1L) && (elf2H <= elf1H))
-            {
-                total++;
-            }
+            char crate = stacks[from-1].back();
+            stacks[from-1].pop_back();
+            stacks[to-1].push_back(crate);
         }
-        else
-        {
-            // Elf2 has the larger range
-            if ((elf1L >= elf2L) && (elf1H <= elf2H))
-            {
-                total++;
-            }
-        }
-
-        // @TODO
-
-        inputLine.clear();
     }
-    infile.close();
-
-    std::cout << std::endl;
-    std::cout << "Total overlaps: " << total << std::endl;
-    std::cout << std::endl;
 }
 
 //-----------------------------------------------------------------------------
@@ -85,62 +125,40 @@ void part_1(void)
 // Premise...
 void part_2(void)
 {
-    std::cout << "Loading task pairs..." << std::endl;
-
-    std::ifstream infile(cInputFileName);
-    if (!infile)
-    {
-        std::cerr << "Error: unable to open input file: " << cInputFileName << std::endl;
-        return;
-    }
-
-    int total = 0;
+    std::cout << "Rearranging crates..." << std::endl;
 
     std::string inputLine;
     while (!infile.eof())
     {
         getline(infile, inputLine);
-
-        // Skip blank line.
+        // Blank line means end of initial configuration of crates.
         if (inputLine.length() == 0)
         {
-            continue;
+            break;
         }
 
-        // @TODO
-        int elf1L = 0;
-        int elf1H = 0;
-        int elf2L = 0;
-        int elf2H = 0;
+        int nMove = 0;
+        int from = 0;
+        int to = 0;
+        sscanf(inputLine.c_str(), "move %d from %d to %d", &nMove, &from, &to);
+        printf("* Move %d from %d to %d ...\n", nMove, from, to);
 
-        sscanf(inputLine.c_str(), "%d-%d,%d-%d", &elf1L, &elf1H, &elf2L, &elf2H);
-
-        if (elf1L < elf2L)
+        stack_type temp;
+        for (int n = 0; n < nMove; ++n)
         {
-            // Elf1's range starts lower. Check if Elf2's range starts before his ends.
-            if (elf2L <= elf1H)
-            {
-                total++;
-            }
+            char crate = stacks[from-1].back();
+            stacks[from-1].pop_back();
+            temp.push_back(crate);
         }
-        else
+        for (int n = 0; n < nMove; ++n)
         {
-            // Elfs's range starts lower. Check if Elf1's range starts before his ends.
-            if (elf1L <= elf2H)
-            {
-                total++;
-            }
+            char crate = temp.back();
+            temp.pop_back();
+            stacks[to-1].push_back(crate);
         }
-
-        // @TODO
-
-        inputLine.clear();
+        printStacks();
+        std::cout << "============================================" << std::endl;
     }
-    infile.close();
-
-    std::cout << std::endl;
-    std::cout << "Total overlaps: " << total << std::endl;
-    std::cout << std::endl;
 }
 
 //-----------------------------------------------------------------------------
@@ -150,8 +168,31 @@ int main(int argc, char *argv[])
     std::cout << std::endl;
     //-------------------------------------------------------------------------
 
-    part_1();
-    // part_2();
+    loadCrates();
+
+    std::cout << "Stacks:" << std::endl;
+    for (size_t i = 0; i < stacks.size(); ++i)
+    {
+        stack_type stk = stacks[i];
+        printf("%02zu : ", i+1);
+        for (auto crate : stk)
+        {
+            printf("%c ", crate);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    // part_1();
+    part_2();
+
+    printStacks();
+    std::cout << "Crates on top: ";
+    for (auto stk : stacks)
+    {
+        std::cout << stk.back();
+    }
+    std::cout << std::endl;
 
     //-------------------------------------------------------------------------
 

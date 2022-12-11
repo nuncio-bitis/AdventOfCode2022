@@ -12,7 +12,7 @@
 //-----------------------------------------------------------------------------
 
 static const char cInputFileName[] = "test.txt";
-// static const char cInputFileName[] = "input06.txt";
+// static const char cInputFileName[] = "input09.txt";
 
 static std::ifstream infile(cInputFileName);
 
@@ -55,7 +55,6 @@ void loadInputs(void)
 
 //-----------------------------------------------------------------------------
 
-// Premise...
 void part_1(void)
 {
     std::cout << "Processing..." << std::endl;
@@ -65,7 +64,6 @@ void part_1(void)
 
 //-----------------------------------------------------------------------------
 
-// Premise...
 void part_2(void)
 {
     std::cout << "Processing..." << std::endl;
@@ -81,17 +79,17 @@ int main(int argc, char *argv[])
     //-------------------------------------------------------------------------
 
     loadInputs();
-
     printSomething();
 
     part_1();
-    // part_2();
-
     printSomething();
 
-    std::cout << "Results: " << std::endl;
-    // @TODO
-    std::cout << std::endl;
+    // part_2();
+    // printSomething();
+
+    // std::cout << "Results: " << std::endl;
+    // // @TODO
+    // std::cout << std::endl;
 
     //-------------------------------------------------------------------------
 

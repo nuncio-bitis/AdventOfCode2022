@@ -36,12 +36,12 @@ void loadInputs(void)
     }
 
     std::cout << "Loading inputs..." << std::endl;
-    std::string inputLine;
+    std::string iline;
     while (!infile.eof())
     {
-        getline(infile, inputLine);
+        getline(infile, iline);
         // Skip blank lines.
-        if (inputLine.length() == 0)
+        if (iline.length() == 0)
         {
             break;
         }

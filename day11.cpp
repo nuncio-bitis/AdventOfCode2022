@@ -20,7 +20,8 @@ static const char cInputFileName[] = "input11.txt";
 
 static std::ifstream infile(cInputFileName);
 
-struct monkeySpec {
+struct monkeySpec
+{
     uint num;
     std::vector<int64_t> items;
     std::string op;
@@ -28,7 +29,7 @@ struct monkeySpec {
     uint trueToMonkey;
     uint falseToMonkey;
     uint numInspected;
-    monkeySpec() : num(0), testDiv(1), trueToMonkey(0), falseToMonkey(0), numInspected(0) {};
+    monkeySpec() : num(0), testDiv(1), trueToMonkey(0), falseToMonkey(0), numInspected(0){};
 };
 
 static std::vector<monkeySpec *> monkeys;
@@ -44,10 +45,10 @@ void initMonkey(monkeySpec *m)
     m->num = 0;
     m->items.clear();
     m->op.clear();
-    m->testDiv = 1;
-    m->trueToMonkey = 0;
+    m->testDiv       = 1;
+    m->trueToMonkey  = 0;
     m->falseToMonkey = 0;
-    m->numInspected = 0;
+    m->numInspected  = 0;
 }
 
 void printMonkey(monkeySpec *m)
@@ -91,9 +92,7 @@ void printMonkeyInspections(void)
 
     std::sort(insp.begin(), insp.end(), std::greater<int64_t>());
     monkeyBusiness = insp[0] * insp[1];
-    std::cout << "Monkey business: "
-              << insp[0] << " * " << insp[1]
-              << " = " << monkeyBusiness << std::endl;
+    std::cout << "Monkey business: " << insp[0] << " * " << insp[1] << " = " << monkeyBusiness << std::endl;
 }
 
 //-----------------------------------------------------------------------------
@@ -122,7 +121,7 @@ void loadInputs(void)
             // End monkey : store it.
             monkey->num = mnum++;
             monkeys.push_back(monkey);
-            printMonkey(monkey);    // @DEBUG
+            printMonkey(monkey); // @DEBUG
 
             // Init new one
             monkey = new monkeySpec();
@@ -182,7 +181,7 @@ int64_t permformOp(std::string op, int64_t item)
     int64_t result = 0;
 
     inp >> opern; // +, -, *, /
-    inp >> sec; // a number or 'old'
+    inp >> sec;   // a number or 'old'
 
     // Get number to work with
     if (sec.compare("old") == 0)
@@ -203,7 +202,7 @@ int64_t permformOp(std::string op, int64_t item)
     {
         result = item - secnum;
     }
-    else if(opern[0] == '*')
+    else if (opern[0] == '*')
     {
         result = item * secnum;
     }
@@ -254,7 +253,7 @@ void part_1(void)
                 item = m->items.erase(m->items.begin());
 
             } // end item
-        } // end monkey
+        }     // end monkey
 
         // End of round: Print monkeys' items
         printMonkeyItems();

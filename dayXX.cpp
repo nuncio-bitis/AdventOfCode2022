@@ -47,7 +47,6 @@ void loadInputs(void)
         }
 
         // @TODO
-
     }
 
     std::cout << "Inputs info: " << std::endl;

@@ -8,21 +8,62 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <utility>
 
 //-----------------------------------------------------------------------------
 
-static const char cInputFileName[] = "test.txt";
-// static const char cInputFileName[] = "input09.txt";
+// static const char cInputFileName[] = "test.txt";
+static const char cInputFileName[] = "input13.txt";
 
 static std::ifstream infile(cInputFileName);
 
 //-----------------------------------------------------------------------------
 
-void printSomething(void)
+void printIntVec(std::vector<int> v)
 {
-    std::cout << "Something:" << std::endl;
-    // @TODO
-    printf("\n");
+    for (auto x : v)
+    {
+        std::cout << " " << x;
+    }
+    std::cout << std::endl;
+}
+
+//-----------------------------------------------------------------------------
+
+static bool disblk = false;
+
+bool ignoreLine(std::string line)
+{
+    // Skip blank lines.
+    if (line.length() == 0)
+    {
+        return true;
+    }
+    // Check if a block of input has been disabled
+    if ((line[0] == '#') && (line.find("DISABLE") != std::string::npos))
+    {
+        // std::cout << "--- INPUT DISABLED ---" << std::endl; // @DEBUG
+        disblk = true;
+        return true;
+    }
+    // Check if block disable is ended
+    if ((line[0] == '#') && (line.find("ENABLE") != std::string::npos))
+    {
+        // std::cout << "--- INPUT ENABLED ---" << std::endl; // @DEBUG
+        disblk = false;
+        return true;
+    }
+    // Skip disabled block
+    if (disblk)
+    {
+        return true;
+    }
+    // Skip comment lines.
+    if (line[0] == '#')
+    {
+        return true;
+    }
+    return false;
 }
 
 //-----------------------------------------------------------------------------
@@ -41,36 +82,14 @@ void loadInputs(void)
     while (!infile.eof())
     {
         getline(infile, iline);
-        // Skip blank lines.
-        if (iline.length() == 0)
-        {
-            continue;
-        }
-        // Check if a block of input has been disabled
-        if ((iline[0] == '#') && (iline.find("DISABLE") != std::string::npos))
-        {
-            disblk = true;
-            continue;
-        }
-        // Check if block disable is ended
-        if ((iline[0] == '#') && (iline.find("ENABLE") != std::string::npos))
-        {
-            disblk = false;
-            continue;
-        }
-        // Skip disabled block
-        if (disblk)
-        {
-            continue;
-        }
-        // Skip comment lines.
-        if (iline[0] == '#')
+        // Check if line should be ignored.
+        if (ignoreLine(iline))
         {
             continue;
         }
 
         // @TODO
-        std::cout << " > " << iline << std::endl;
+        std::cout << " > " << iline << std::endl; // @DEBUG
     }
 
     std::cout << std::endl;
@@ -103,13 +122,12 @@ int main(int argc, char *argv[])
     //-------------------------------------------------------------------------
 
     loadInputs();
-    printSomething();
 
-    part_1();
-    printSomething();
+    // std::cout << std::endl;
+    // part_1();
 
+    // std::cout << std::endl;
     // part_2();
-    // printSomething();
 
     // std::cout << "Results: " << std::endl;
     // // @TODO

@@ -37,18 +37,43 @@ void loadInputs(void)
 
     std::cout << "Loading inputs..." << std::endl;
     std::string iline;
+    bool disblk = false;
     while (!infile.eof())
     {
         getline(infile, iline);
         // Skip blank lines.
         if (iline.length() == 0)
         {
-            break;
+            continue;
+        }
+        // Check if a block of input has been disabled
+        if ((iline[0] == '#') && (iline.find("DISABLE") != std::string::npos))
+        {
+            disblk = true;
+            continue;
+        }
+        // Check if block disable is ended
+        if ((iline[0] == '#') && (iline.find("ENABLE") != std::string::npos))
+        {
+            disblk = false;
+            continue;
+        }
+        // Skip disabled block
+        if (disblk)
+        {
+            continue;
+        }
+        // Skip comment lines.
+        if (iline[0] == '#')
+        {
+            continue;
         }
 
         // @TODO
+        std::cout << " > " << iline << std::endl;
     }
 
+    std::cout << std::endl;
     std::cout << "Inputs info: " << std::endl;
 }
 

@@ -1,3 +1,10 @@
+# Comment line
+# DISABLE
+These lines are disabled
+Ignore me
+I'm also invisible!
+# ENABLE
+# Lines are now being read again
 Sabqponm
 abcryxxl
 accszExk

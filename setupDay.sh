@@ -31,12 +31,11 @@ if [[ -f ${newDayFile} ]]; then
     echo "WARNING: ${newDayFile} already exists. Not overwriting."
 else
     echo "Creating ${newDayFile}..."
-    #cp -v dayXX.cpp ${newDayFile}
     cat dayXX.cpp | sed -e "s/input..\.txt/input${day}\.txt/" > ${newDayFile}
 
     echo "Data files..."
     touch ${newDataFile}
-    echo > test.txt
+    #echo > test.txt
 fi
 
 echo

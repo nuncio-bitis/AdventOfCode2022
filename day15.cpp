@@ -19,17 +19,17 @@ static const char cInputFileName[] = "input15.txt";
 static std::ifstream infile(cInputFileName);
 
 // Grid: [row][col] = [y][x]
-static int minX = INT_MAX;
-static int maxX = INT_MIN;
-static int minY = INT_MAX;
-static int maxY = INT_MIN;
-static int gridWidth = 0;
-static int gridHeight = 0;
+static int64_t minX = INT_MAX;
+static int64_t maxX = INT_MIN;
+static int64_t minY = INT_MAX;
+static int64_t maxY = INT_MIN;
+static int64_t gridWidth = 0;
+static int64_t gridHeight = 0;
 
 struct sensor {
-    int x;
-    int y;
-    int d2b;
+    int64_t x;
+    int64_t y;
+    int64_t d2b;
 };
 std::vector<sensor> sensors;
 std::vector<sensor> beacons;
@@ -37,7 +37,7 @@ std::vector<sensor> beacons;
 //-----------------------------------------------------------------------------
 
 static bool disblk = false;
-static int testRow = 0;
+static int64_t testRow = 0;
 
 bool ignoreLine(std::string line)
 {
@@ -105,8 +105,8 @@ void loadInputs(void)
         }
         std::cout << " > " << iline << std::endl; // @DEBUG
 
-        int sx, sy, bx, by;
-        sscanf(iline.c_str(), "Sensor at x=%d, y=%d: closest beacon is at x=%d, y=%d",
+        int64_t sx, sy, bx, by;
+        sscanf(iline.c_str(), "Sensor at x=%ld, y=%ld: closest beacon is at x=%ld, y=%ld",
                 &sx, &sy, &bx, &by);
 
         if (sx < minX) minX = sx;
@@ -120,7 +120,7 @@ void loadInputs(void)
         if (by > maxY) maxY = by;
 
         // Add sensor to list, including its distance to the nearest beacon.
-        sensor s = {sx, sy, (abs(sx - bx) + abs(sy - by))};
+        sensor s = {sx, sy, (labs(sx - bx) + labs(sy - by))};
         sensors.push_back(s);
         // Add beacon to list.
         sensor b = {bx, by, 0};
@@ -131,21 +131,21 @@ void loadInputs(void)
     std::cout << std::endl;
     std::cout << "Y: [" << minY << ".." << maxY << "]" << std::endl;
     std::cout << "X: [" << minX << ".." << maxX << "]" << std::endl;
-    gridWidth = (abs(maxX - minX)+ 1);
-    gridHeight = (abs(maxY - minY) + 1);
+    gridWidth = (labs(maxX - minX)+ 1);
+    gridHeight = (labs(maxY - minY) + 1);
     std::cout << "Grid size: " << gridWidth << " x " << gridHeight << std::endl;
 }
 
 //-----------------------------------------------------------------------------
 
-void part_1(int rownum)
+void part_1(int64_t rownum)
 {
     std::cout << "Processing row " << rownum << " ..." << std::endl;
-    int totalEmpty = 0;
+    int64_t totalEmpty = 0;
 
     // Create row of unknown values.
     std::vector<char> row;
-    for (int x = 0; x < gridWidth; ++x)
+    for (int64_t x = 0; x < gridWidth; ++x)
     {
         row.push_back('.');
     }
@@ -165,24 +165,25 @@ void part_1(int rownum)
     // Its not a beacon
 
     // Iterate over each point in the row
-    for (int x = minX; x <= maxX; ++x)
+    for (int64_t x = minX; x <= maxX; ++x)
     {
-        int lx = x - minX;
+        int64_t lx = x - minX;
         // Check if this point is a beacon
         if (row[lx] == 'B')
         {
-            std::cout << "Found beacon at [" << lx << "," << rownum << "]" << std::endl; // @DEBUG
+            // std::cout << "Found beacon at [" << lx << "," << rownum << "]" << std::endl; // @DEBUG
             continue;
         }
 
         // Not a beacon. Check if it's within distance of a sensor.
         for (auto s : sensors)
         {
-            int distToS = abs(x - s.x) + abs(rownum - s.y);
+            int64_t distToS = labs(x - s.x) + labs(rownum - s.y);
             // std::cout << "[" << x << "," << row << "]: " << distToS << ", " << s.d2b << std::endl; // @DEBUG
             if (distToS <= s.d2b)
             {
                 totalEmpty++;
+                // row[x- minX] = '#'; // @DEBUG
                 // std::cout << "  Found possibility at [" << x << "," << row << "]" << std::endl; // @DEBUG
                break;
             }
@@ -190,6 +191,13 @@ void part_1(int rownum)
 
         // std::cout << "---" << std::endl; // @DEBUG
     } // end row iteration
+    // // @DEBUG
+    // for (int64_t x = 0; x < gridWidth; ++x)
+    // {
+    //     std::cout << " " << row[x];
+    // }
+    // std::cout << std::endl;
+    // // @DEBUG
 
     std::cout << "Found " << totalEmpty << " possibilities" << std::endl;
 }
@@ -216,9 +224,9 @@ int main(int argc, char *argv[])
     //     std::cout << std::endl;
     //     return EXIT_FAILURE;
     // }
-    // int testRow = 10;
-    // int testRow = 2000000;
-    // int testRow = std::atoi(argv[1]);
+    // int64_t testRow = 10;
+    // int64_t testRow = 2000000;
+    // int64_t testRow = std::atoi(argv[1]);
 
     loadInputs();
 

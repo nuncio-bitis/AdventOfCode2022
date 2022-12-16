@@ -78,7 +78,6 @@ void loadInputs(void)
 
     std::cout << "Loading inputs..." << std::endl;
     std::string iline;
-    bool disblk = false;
     while (!infile.eof())
     {
         getline(infile, iline);

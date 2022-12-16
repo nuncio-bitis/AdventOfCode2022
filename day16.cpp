@@ -7,7 +7,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream>
 #include <vector>
+#include <map>
 #include <utility>
 
 //-----------------------------------------------------------------------------
@@ -16,6 +18,13 @@
 static const char cInputFileName[] = "input16.txt";
 
 static std::ifstream infile(cInputFileName);
+
+struct node {
+    std::string name;
+    int rate;
+    std::vector<std::string> connects;
+};
+std::map<std::string, node> graph;
 
 //-----------------------------------------------------------------------------
 
@@ -78,7 +87,6 @@ void loadInputs(void)
 
     std::cout << "Loading inputs..." << std::endl;
     std::string iline;
-    bool disblk = false;
     while (!infile.eof())
     {
         getline(infile, iline);
@@ -88,12 +96,50 @@ void loadInputs(void)
             continue;
         }
 
-        // @TODO
         std::cout << " > " << iline << std::endl; // @DEBUG
+
+        char nname[3];
+        node thisNode;
+        sscanf(iline.c_str(), "Valve %s has flow rate=%d; tunnels lead to valves", nname, &thisNode.rate);
+        thisNode.name = nname;
+
+        // Input connected nodes
+        size_t pos = iline.find_last_of("valve");
+
+        std::string consList = iline.substr(pos+2);
+
+        // replace all commas with a space
+        std::replace(consList.begin(), consList.end(), ',', ' ');
+
+        std::istringstream cons(consList);
+        while (!cons.eof())
+        {
+            std::string nname;
+            cons >> nname;
+            if (nname.size() == 0)
+            {
+                break;
+            }
+            thisNode.connects.push_back(nname);
+
+        }
+
+        graph.emplace(std::make_pair(thisNode.name, thisNode));
     }
 
     std::cout << std::endl;
     std::cout << "Inputs info: " << std::endl;
+    for (auto [name, node] : graph)
+    {
+        std::cout << name << std::endl;
+        std::cout << "  Flow rate: " << node.rate << std::endl;
+        std::cout << "  Connected nodes: ";
+        for (auto cn : node.connects)
+        {
+            std::cout << cn << " ";
+        }
+        std::cout << std::endl;
+    }
 }
 
 //-----------------------------------------------------------------------------

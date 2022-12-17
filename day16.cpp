@@ -19,7 +19,8 @@ static const char cInputFileName[] = "input16.txt";
 
 static std::ifstream infile(cInputFileName);
 
-struct node {
+struct node
+{
     std::string name;
     int rate;
     std::vector<std::string> connects;
@@ -106,7 +107,7 @@ void loadInputs(void)
         // Input connected nodes
         size_t pos = iline.find_last_of("valve");
 
-        std::string consList = iline.substr(pos+2);
+        std::string consList = iline.substr(pos + 2);
 
         // replace all commas with a space
         std::replace(consList.begin(), consList.end(), ',', ' ');
@@ -121,7 +122,6 @@ void loadInputs(void)
                 break;
             }
             thisNode.connects.push_back(nname);
-
         }
 
         graph.emplace(std::make_pair(thisNode.name, thisNode));

@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Mac files
+*.dSYM
+Info.plist

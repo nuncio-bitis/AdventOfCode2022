@@ -13,7 +13,7 @@
 //-----------------------------------------------------------------------------
 
 // static const char cInputFileName[] = "test.txt";
-static const char cInputFileName[] = "input13.txt";
+static const char cInputFileName[] = "input17.txt";
 
 static std::ifstream infile(cInputFileName);
 

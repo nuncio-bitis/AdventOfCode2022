@@ -19,17 +19,22 @@ static const char cInputFileName[] = "input20.txt";
 static std::ifstream infile(cInputFileName);
 static bool TEST = false;
 
-static std::vector<int> inList;  // initial input
-static std::vector<int> mixList; // after part 1
+struct entry
+{
+    int val;
+    bool moved;
+};
+static std::vector<entry> inList;  // initial input
+static std::vector<entry> mixList; // after part 1
 static size_t listSize = 0;
 
 //-----------------------------------------------------------------------------
 
-void printIntVec(std::vector<int> v)
+void printIntVec(std::vector<entry> v)
 {
     for (auto x : v)
     {
-        printf(" %2d", x);
+        printf(" %2d", x.val);
     }
     std::cout << std::endl;
 }
@@ -102,8 +107,9 @@ void loadInputs(void)
             continue;
         }
 
-        int num = std::stoi(iline);
-        inList.push_back(num);
+        int num    = std::stoi(iline);
+        entry data = {num, false};
+        inList.push_back(data);
     }
 
     listSize = inList.size();
@@ -121,51 +127,63 @@ void loadInputs(void)
 
 //-----------------------------------------------------------------------------
 
-// @XXX This is assuming there aren't duplicates of numbers.
-// However, in the real data there ARE duplicates.
-
+// Assume there are duplicates in the data.
 void part_1(void)
 {
     std::cout << "Mixing original input list..." << std::endl;
 
     // Duplicate original list
     mixList = inList;
+    mixList.reserve(listSize + 2);
 
-    for (size_t i = 0; i < inList.size(); ++i)
+    // @DEBUG
+    if (TEST)
     {
-        int num = inList[i];
+        std::cout << std::endl;
+        std::cout << "START mixList:";
+        printIntVec(mixList);
+        std::cout << "Size: " << mixList.size() << std::endl;
+        std::cout << "Capacity: " << mixList.capacity() << std::endl;
+    }
 
-        if (TEST) std::cout << std::endl; // @DEBUG
+    auto cur = mixList.begin();
+    int loc = 0;
+    while (cur != mixList.end())
+    {
+        if (TEST)
+            std::cout << std::endl; // @DEBUG
+
+        // Move to first unmoved number
+        loc = 0;
+        for (cur = mixList.begin(); cur != mixList.end(); cur++, loc++)
+        {
+            if (TEST) printf("SEARCH Loc:%2d, Val:%2d\n", loc, cur->val); // @DEBUG
+            if (!cur->moved) break;
+        }
+
+        if (loc >= (int)listSize)
+        {
+            break;
+        }
+
+        if (TEST) printf("Loc:%2d, Val:%2d\n", loc, cur->val); // @DEBUG
 
         // Nothing happens if 0
-        if (0 == num)
+        if (0 == cur->val)
         {
-            if (TEST) printf("%2d: NOP\n", num);
+            if (TEST) printf("0: NOP\n");
+            cur->moved = true;
+            // @DEBUG
+            if (TEST)
+            {
+                std::cout << "mixList:";
+                printIntVec(mixList);
+            }
             continue;
         }
 
-        // Find number in new list
-        auto cur = mixList.begin();
-        int loc = 0;
-        while (cur != mixList.end())
-        {
-            if (*cur == num)
-            {
-                break;
-            }
-            cur++;
-            loc++;
-        }
-        // @DEBUG
-        if (TEST)
-        {
-            printf("%2d: Found %2d at %d\n", num, *cur, loc);
-            printf("cur: %2d\n", *cur);
-        }
-
         // Calculate new location
-        int newLoc = (loc + num);
-
+        int newLoc = (loc + cur->val);
         if (newLoc < 0)
         {
             newLoc = newLoc + listSize;
@@ -180,39 +198,38 @@ void part_1(void)
         if (newLoc == 0)
         {
             // Add to the end
-            if (TEST) printf("Add to end\n"); // @DEBUG
+            if (TEST)
+                printf("Add to end\n"); // @DEBUG
         }
 
-        if (TEST) printf("move to index %2d\n", newLoc); // @DEBUG
+        if (TEST)
+            printf("move to index %2d\n", newLoc); // @DEBUG
+
+        cur->moved = true;
 
         if (newLoc == 0)
         {
             // Add to the end
-            if (TEST) printf("Add to end\n"); // @DEBUG
-            mixList.push_back(num);
+            if (TEST)
+                printf("Add to end\n"); // @DEBUG
+            mixList.push_back(*cur);
         }
         else
         {
             auto nx = std::next(mixList.begin(), newLoc);
-            if (TEST) printf("move to before %2d\n", *nx); // @DEBUG
+            if (TEST)
+                printf("move to before %2d\n", nx->val); // @DEBUG
+
             // Insert number to new location
-            mixList.insert(nx, num);
+            mixList.insert(nx, *cur);
 
-            // Account for old number being moved.
-            if (newLoc < loc) loc++;
-        }
-
-        // @DEBUG
-        if (TEST)
-        {
-            std::cout << "mixList:";
-            printIntVec(mixList);
+            if (nx < cur) cur++;
         }
 
         // Delete number from the old location
-        // printf("Remove %2d from location %2d\n", num, loc);
-        cur = std::next(mixList.begin(), loc);
+        if (TEST) printf("Remove %2d from location %2d\n", cur->val, loc);
         mixList.erase(cur);
+        if (TEST) printf("Loc:%2d, Val:%2d\n", loc, cur->val); // @DEBUG
 
         // @DEBUG
         if (TEST)
@@ -226,7 +243,7 @@ void part_1(void)
     if (TEST)
     {
         std::cout << std::endl;
-        std::cout << "mixList:";
+        std::cout << "END mixList:";
         printIntVec(mixList);
     }
 
@@ -234,26 +251,24 @@ void part_1(void)
     size_t i0 = 0;
     for (i0 = 0; i0 < listSize; ++i0)
     {
-        if (mixList[i0] == 0)
+        if (mixList[i0].val == 0)
         {
             break;
         }
     }
-    std::cout << "* 0 found at index " << i0 << std::endl;
+    std::cout << "* 0 found at index " << i0 << " (" << mixList[i0].val << ")" << std::endl;
 
     int coord1Idx = (1000 + i0) % listSize;
     int coord2Idx = (2000 + i0) % listSize;
     int coord3Idx = (3000 + i0) % listSize;
     std::cout << "Indices: " << coord1Idx << ", " << coord2Idx << ", " << coord3Idx << std::endl;
-    std::cout << "Coords: "
-              << mixList[coord1Idx] << ", "
-              << mixList[coord2Idx] << ", "
-              << mixList[coord3Idx] << std::endl;
+    std::cout << "Coords: " << mixList[coord1Idx].val << ", "
+                << mixList[coord2Idx].val << ", "
+                << mixList[coord3Idx].val << std::endl;
 
-    std::cout << "Sum of coords: "
-              << (mixList[coord1Idx] + mixList[coord2Idx] + mixList[coord3Idx])
-              << std::endl;
+    int sum = mixList[coord1Idx].val + mixList[coord2Idx].val + mixList[coord3Idx].val;
 
+    std::cout << "Sum of coords: " << sum << std::endl;
 }
 
 //-----------------------------------------------------------------------------

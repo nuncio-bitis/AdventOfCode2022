@@ -17,9 +17,11 @@
 static const char cInputFileName[] = "input20.txt";
 
 static std::ifstream infile(cInputFileName);
+static bool TEST = false;
 
 static std::vector<int> inList;  // initial input
 static std::vector<int> mixList; // after part 1
+static size_t listSize = 0;
 
 //-----------------------------------------------------------------------------
 
@@ -57,6 +59,13 @@ bool ignoreLine(std::string line)
         disblk = false;
         return true;
     }
+    // Check if test input
+    if (!disblk && (line[0] == '#') && (line.find("TEST") != std::string::npos))
+    {
+        std::cout << "--- PROCESSING TEST INPUT ---" << std::endl; // @DEBUG
+        TEST = true;
+        return true;
+    }
     // Skip disabled block
     if (disblk)
     {
@@ -80,6 +89,8 @@ void loadInputs(void)
         exit(1);
     }
 
+    TEST = false;
+
     std::cout << "Loading inputs..." << std::endl;
     std::string iline;
     while (!infile.eof())
@@ -95,38 +106,43 @@ void loadInputs(void)
         inList.push_back(num);
     }
 
+    listSize = inList.size();
+
     std::cout << std::endl;
-    std::cout << "Inputs info: input list length = " << inList.size() << std::endl;
+    std::cout << "Inputs info: input list length = " << listSize << std::endl;
+
+    // @DEBUG
+    if (TEST)
+    {
+        std::cout << "inList:";
+        printIntVec(inList);
+    }
 }
 
 //-----------------------------------------------------------------------------
 
+// @XXX This is assuming there aren't duplicates of numbers.
+// However, in the real data there ARE duplicates.
+
 void part_1(void)
 {
-    std::cout << std::endl;
     std::cout << "Mixing original input list..." << std::endl;
 
+    // Duplicate original list
     mixList = inList;
-    std::cout << "Inputs info: initial mix list length = " << mixList.size() << std::endl;
-
-    int coord1Idx;
-    int coord2Idx;
-    int coord3Idx;
-
-    // std::cout << "inList:";
-    // printIntVec(inList);
 
     for (size_t i = 0; i < inList.size(); ++i)
     {
         int num = inList[i];
 
+        if (TEST) std::cout << std::endl; // @DEBUG
+
         // Nothing happens if 0
         if (0 == num)
         {
+            if (TEST) printf("%2d: NOP\n", num);
             continue;
         }
-
-        // std::cout << std::endl;
 
         // Find number in new list
         auto cur = mixList.begin();
@@ -140,33 +156,45 @@ void part_1(void)
             cur++;
             loc++;
         }
-        // printf("%2d: Found %2d at %d\n", num, *cur, loc);
-        // printf("cur: %2d\n", *cur);
+        // @DEBUG
+        if (TEST)
+        {
+            printf("%2d: Found %2d at %d\n", num, *cur, loc);
+            printf("cur: %2d\n", *cur);
+        }
 
         // Calculate new location
         int newLoc = (loc + num);
-        // printf("move to index %2d\n", newLoc);
+
         if (newLoc < 0)
         {
-            newLoc = newLoc + mixList.size();
+            newLoc = newLoc + listSize;
         }
         else if (newLoc > 0)
         {
+            // Need to insert BEFORE the next number
             newLoc++;
         }
-        newLoc = newLoc % mixList.size();
-        // printf("move to index %2d\n", newLoc);
+        newLoc = newLoc % listSize;
 
-        auto nx = std::next(mixList.begin(), newLoc);
         if (newLoc == 0)
         {
             // Add to the end
-            // printf("Add to end\n");
+            if (TEST) printf("Add to end\n"); // @DEBUG
+        }
+
+        if (TEST) printf("move to index %2d\n", newLoc); // @DEBUG
+
+        if (newLoc == 0)
+        {
+            // Add to the end
+            if (TEST) printf("Add to end\n"); // @DEBUG
             mixList.push_back(num);
         }
         else
         {
-            // printf("move to before %2d\n", *nx);
+            auto nx = std::next(mixList.begin(), newLoc);
+            if (TEST) printf("move to before %2d\n", *nx); // @DEBUG
             // Insert number to new location
             mixList.insert(nx, num);
 
@@ -174,24 +202,37 @@ void part_1(void)
             if (newLoc < loc) loc++;
         }
 
-        // std::cout << "mixList:";
-        // printIntVec(mixList);
+        // @DEBUG
+        if (TEST)
+        {
+            std::cout << "mixList:";
+            printIntVec(mixList);
+        }
 
         // Delete number from the old location
         // printf("Remove %2d from location %2d\n", num, loc);
         cur = std::next(mixList.begin(), loc);
         mixList.erase(cur);
 
-        // std::cout << "mixList:";
-        // printIntVec(mixList);
+        // @DEBUG
+        if (TEST)
+        {
+            std::cout << "mixList:";
+            printIntVec(mixList);
+        }
     }
 
-    // std::cout << "mixList:";
-    // printIntVec(mixList);
+    // @DEBUG
+    if (TEST)
+    {
+        std::cout << std::endl;
+        std::cout << "mixList:";
+        printIntVec(mixList);
+    }
 
     // Find the index of 0
-    int i0 = 0;
-    for (i0 = 0; i0 < mixList.size(); ++i0)
+    size_t i0 = 0;
+    for (i0 = 0; i0 < listSize; ++i0)
     {
         if (mixList[i0] == 0)
         {
@@ -200,9 +241,9 @@ void part_1(void)
     }
     std::cout << "* 0 found at index " << i0 << std::endl;
 
-    coord1Idx = (1000 + i0) % mixList.size();
-    coord2Idx = (2000 + i0) % mixList.size();
-    coord3Idx = (3000 + i0) % mixList.size();
+    int coord1Idx = (1000 + i0) % listSize;
+    int coord2Idx = (2000 + i0) % listSize;
+    int coord3Idx = (3000 + i0) % listSize;
     std::cout << "Indices: " << coord1Idx << ", " << coord2Idx << ", " << coord3Idx << std::endl;
     std::cout << "Coords: "
               << mixList[coord1Idx] << ", "

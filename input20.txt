@@ -1,5 +1,5 @@
-# DISABLE
-# Test input
+# ENABLE
+# TEST input
 1
 2
 -3
@@ -7,8 +7,9 @@
 -2
 0
 4
+3
 
-# ENABLE
+# DISABLE
 # Real input
 -9405
 1055

@@ -1,12 +1,28 @@
-# Comment line
-# DISABLE
-These lines are disabled
-Ignore me
-I'm also invisible!
 # ENABLE
-# Lines are now being read again
-Sabqponm
-abcryxxl
-accszExk
-acctuvwj
-abdefghi
+# TEST input
+1
+2
+-3
+3
+-2
+0
+4
+
+# DISABLE
+# Real input
+-9405
+1055
+9806
+-52
+9756
+5575
+-6868
+9680
+-3207
+4001
+-8161
+-9566
+-1226
+1900
+2866
+4187

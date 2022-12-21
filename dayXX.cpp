@@ -9,6 +9,7 @@
 #include <string>
 #include <vector>
 #include <utility>
+#include <iterator>
 
 //-----------------------------------------------------------------------------
 
@@ -16,6 +17,7 @@
 static const char cInputFileName[] = "input13.txt";
 
 static std::ifstream infile(cInputFileName);
+static bool TEST = false;
 
 //-----------------------------------------------------------------------------
 
@@ -23,7 +25,7 @@ void printIntVec(std::vector<int> v)
 {
     for (auto x : v)
     {
-        std::cout << " " << x;
+        printf(" %2d", x);
     }
     std::cout << std::endl;
 }
@@ -53,6 +55,13 @@ bool ignoreLine(std::string line)
         disblk = false;
         return true;
     }
+    // Check if test input
+    if (!disblk && (line[0] == '#') && (line.find("TEST") != std::string::npos))
+    {
+        std::cout << "--- PROCESSING TEST INPUT ---" << std::endl; // @DEBUG
+        TEST = true;
+        return true;
+    }
     // Skip disabled block
     if (disblk)
     {
@@ -76,6 +85,8 @@ void loadInputs(void)
         exit(1);
     }
 
+    TEST = false;
+
     std::cout << "Loading inputs..." << std::endl;
     std::string iline;
     while (!infile.eof())
@@ -88,7 +99,12 @@ void loadInputs(void)
         }
 
         // @TODO
-        std::cout << " > " << iline << std::endl; // @DEBUG
+
+        // @DEBUG
+        if (TEST)
+        {
+            std::cout << " > " << iline << std::endl;
+        }
     }
 
     std::cout << std::endl;

@@ -226,9 +226,12 @@ std::string performSubst(const std::string mname, job &job)
     std::string left;
     std::string right;
 
-    // if (TEST) std::cout << mname << ": " << job.left
-    //                     << " " << job.op << " "
-    //                     << job.right << std::endl; // @DEBUG
+    int64_t l;
+    int64_t r;
+
+    if (TEST) std::cout << mname << ": " << job.left
+                        << " " << job.op << " "
+                        << job.right << std::endl; // @DEBUG
 
     if (mnums.contains(job.left))
     {
@@ -240,6 +243,7 @@ std::string performSubst(const std::string mname, job &job)
         else
         {
             left = std::to_string(mnums[job.left]);
+            l = mnums[job.left];
         }
     }
     else
@@ -247,7 +251,7 @@ std::string performSubst(const std::string mname, job &job)
         // Left is a math monkey. Get its result.
         left = performSubst(job.left, mjobs[job.left]);
     }
-    // if (TEST) std::cout << "  left = " << left << std::endl; // @DEBUG
+    if (TEST) std::cout << "  left = " << left << std::endl; // @DEBUG
 
     if (mnums.contains(job.right))
     {
@@ -259,6 +263,7 @@ std::string performSubst(const std::string mname, job &job)
         else
         {
             right = std::to_string(mnums[job.right]);
+            r = mnums[job.right];
         }
     }
     else
@@ -266,9 +271,66 @@ std::string performSubst(const std::string mname, job &job)
         // Right is a math monkey. Get its result.
         right = performSubst(job.right, mjobs[job.right]);
     }
-    // if (TEST) std::cout << "  right = " << right << std::endl; // @DEBUG
+    if (TEST) std::cout << "  right = " << right << std::endl; // @DEBUG
 
-    return ( "(" + left + " " + job.op + " " + right + ")" );
+    // ----------------------
+
+    switch (job.op)
+    {
+    case '+':
+        job.result = l + r;
+        break;
+
+    case '-':
+        job.result = l - r;
+        break;
+
+    case '*':
+        job.result = l * r;
+        break;
+
+    case '/':
+        job.result = l / r;
+        break;
+
+    // Part 2: root checks if 2 numbers are equal
+    case '=':
+    {
+        job.result = (left == right);
+        int64_t diff = (l - r);
+        std::cout << "*** DIFF = " << l << " - " << l << " = " << diff << std::endl; // @DEBUG
+        break;
+    }
+
+    default:
+        break;
+    }
+
+    // ----------------------
+
+    std::string ret;
+    if (job.left == "humn")
+    {
+        ret = "(humn ";
+        ret.push_back(job.op);
+        ret += " ";
+        ret += std::to_string(r);
+        ret += ")";
+    }
+    else if (job.right == "humn")
+    {
+        ret = "(";
+        ret += std::to_string(l);
+        ret += " ";
+        ret.push_back(job.op);
+        ret += " humn)";
+    }
+    else
+    {
+        ret = std::to_string(job.result);
+    }
+    // if (TEST) std::cout << ret << std::endl; // @DEBUG
+    return ret;
 }
 
 //-----------------------------------------------------------------------------
@@ -281,7 +343,8 @@ void part_2(void)
     mjobs["root"].op = '=';
 
     std::cout << performSubst(mjobs["root"].left, mjobs[mjobs["root"].left])
-              << " = " << mjobs[mjobs["root"].right].result << std::endl;
+              << std::endl;
+    std::cout  << " = " << mjobs[mjobs["root"].right].result << std::endl;
 }
 
 //-----------------------------------------------------------------------------
@@ -298,10 +361,6 @@ int main(int argc, char *argv[])
 
     std::cout << std::endl;
     part_2();
-
-    // std::cout << "Results: " << std::endl;
-    // // @TODO
-    // std::cout << std::endl;
 
     //-------------------------------------------------------------------------
 

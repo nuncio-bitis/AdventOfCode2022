@@ -36,7 +36,7 @@ else
     echo "Data files..."
     touch ${newDataFile}
     echo "# ENABLE" >> ${newDataFile}
-    echo "# Test input" >> ${newDataFile}
+    echo "# TEST input" >> ${newDataFile}
     echo  >> ${newDataFile}
     echo "# DISABLE" >> ${newDataFile}
     echo "# Real input" >> ${newDataFile}

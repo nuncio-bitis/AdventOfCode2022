@@ -33,16 +33,11 @@ endif
 
 GCCVERSIONGT60 := $(shell expr $(GCC_VER) \>= $(MIN_GCC_VER))
 OSTYPE := $(shell uname)
-ifeq "$(GCCVERSIONGT60)" "1"
-    GCC_STD=-std=c++20
-else
-    GCC_STD=-std=c++0x
-endif
+GCC_STD=-std=c++20
 
 ifneq "$(OSTYPE)" "Darwin"
 	LIBS += -lrt
 else
-	GCC_STD=-std=c++20
 	INCLUDES = -I../mqueue-mac -I /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types
 	OBJS = ../mqueue-mac/mqueue.o
 endif
@@ -68,7 +63,7 @@ LDFLAGS = -pthread
 
 OBJ_TARGETS =
 
-CXX_TARGETS = day20
+CXX_TARGETS = day21
 
 #-------------------------------------------------------------------------------
 

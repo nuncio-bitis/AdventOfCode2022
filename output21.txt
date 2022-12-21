@@ -1,0 +1,1925 @@
+
+Loading inputs...
+--- PROCESSING TEST INPUT ---
+Inputs info: 959 number monkeys, 958 math monkeys
+
+Processing...
+root: fzvp = grlb
+  fzvp: nggn * rcmw
+    rcmw: tjgv + vhmc
+      tjgv: qfpr / qsqj
+        qfpr: qzjc - fcfh
+          qzjc: hptc * nsgf
+            hptc: sssb * vhwd
+              sssb: tgtt + prcb
+                tgtt: ngjh * lrhp
+                  ngjh: rlvp * zhrd
+                    zhrd: rvhz + bjrp
+                      rvhz: gzsd * jrmd
+                        jrmd: zclr * glgv
+                          glgv: dcmv + chtf
+                            dcmv: ffzr + ndwb
+                              ffzr: dqlc + nnps
+                                dqlc: jfmq + djbd
+                                  jfmq: rqwg / rgsn
+                                    rqwg: slqn * pbvt
+                                      pbvt: jnzb + srsw
+                                        srsw: snfp + ssjg
+                                          snfp: nccg - hbdn
+                                            nccg: thgl * whwn
+                                            nccg result = (2 * 13) = 26
+                                          snfp result = (26 - 3) = 23
+                                        srsw result = (23 + 10) = 33
+                                      pbvt result = (4 + 33) = 37
+                                    rqwg result = (2 * 37) = 74
+                                  jfmq result = (74 / 2) = 37
+                                  djbd: jggr + rcbq
+                                    jggr: lwms * dgwv
+                                      dgwv: wjft * qncr
+                                        qncr: tnnq + vdqr
+                                        qncr result = (3 + 4) = 7
+                                      dgwv result = (3 * 7) = 21
+                                    jggr result = (2 * 21) = 42
+                                    rcbq: sfdv * ljcq
+                                      sfdv: psmg + rzvl
+                                        psmg: bvgg * pnmq
+                                          pnmq: vvgj + pwtc
+                                            vvgj: rqvd * bcpb
+                                            vvgj result = (3 * 4) = 12
+                                            pwtc: qlcj - fzcs
+                                              qlcj: tddb * gnnw
+                                                gnnw: htvr * jhdr
+                                                  jhdr: mmzg + hsbz
+                                                  jhdr result = (3 + 3) = 6
+                                                gnnw result = (2 * 6) = 12
+                                              qlcj result = (3 * 12) = 36
+                                            pwtc result = (36 - 1) = 35
+                                          pnmq result = (12 + 35) = 47
+                                        psmg result = (2 * 47) = 94
+                                      sfdv result = (94 + 3) = 97
+                                    rcbq result = (97 * 2) = 194
+                                  djbd result = (42 + 194) = 236
+                                dqlc result = (37 + 236) = 273
+                                nnps: sqvb * jjhw
+                                  sqvb: rhqm + gndf
+                                    gndf: vfrp + schm
+                                      vfrp: vvzl - ctph
+                                        vvzl: sbqp + rlhn
+                                          sbqp: pcvc * nrjj
+                                          sbqp result = (8 * 2) = 16
+                                        vvzl result = (16 + 13) = 29
+                                      vfrp result = (29 - 1) = 28
+                                    gndf result = (28 + 1) = 29
+                                  sqvb result = (14 + 29) = 43
+                                nnps result = (43 * 2) = 86
+                              ffzr result = (273 + 86) = 359
+                              ndwb: bwjs * sfdl
+                                sfdl: pjcp * vtmm
+                                sfdl result = (10 * 3) = 30
+                              ndwb result = (5 * 30) = 150
+                            dcmv result = (359 + 150) = 509
+                            chtf: jtbn + cjbn
+                              jtbn: djzb * rsgt
+                                djzb: zvch + cwvf
+                                  zvch: zbjs + mwbm
+                                    zbjs: qvlf * pfzf
+                                    zbjs result = (3 * 5) = 15
+                                    mwbm: mwjq + ltvm
+                                    mwbm result = (1 + 7) = 8
+                                  zvch result = (15 + 8) = 23
+                                djzb result = (23 + 6) = 29
+                                rsgt: bnqz + pcpz
+                                  bnqz: tsnv + fhqw
+                                  bnqz result = (5 + 4) = 9
+                                rsgt result = (9 + 4) = 13
+                              jtbn result = (29 * 13) = 377
+                              cjbn: blwd * fdsc
+                                blwd: rdzp * smgf
+                                  rdzp: clqf + jprw
+                                    clqf: dmft + mblj
+                                      mblj: hwwm * pmzz
+                                        pmzz: vvfn - ndgb
+                                        pmzz result = (13 - 2) = 11
+                                      mblj result = (3 * 11) = 33
+                                    clqf result = (2 + 33) = 35
+                                  rdzp result = (35 + 6) = 41
+                                blwd result = (41 * 3) = 123
+                                fdsc: ghrn * bdwt
+                                fdsc result = (3 * 13) = 39
+                              cjbn result = (123 * 39) = 4797
+                            chtf result = (377 + 4797) = 5174
+                          glgv result = (509 + 5174) = 5683
+                        jrmd result = (3 * 5683) = 17049
+                      rvhz result = (5 * 17049) = 85245
+                      bjrp: cmmc * sfbb
+                        cmmc: tpmh + wlnq
+                          tpmh: mftp + hlrd
+                            mftp: bfth + cstj
+                            mftp result = (5 + 15) = 20
+                            hlrd: mdgz * cssd
+                            hlrd result = (9 * 3) = 27
+                          tpmh result = (20 + 27) = 47
+                          wlnq: qchd * mnwz
+                            mnwz: gsqv * mcgs
+                            mnwz result = (3 * 3) = 9
+                          wlnq result = (5 * 9) = 45
+                        cmmc result = (47 + 45) = 92
+                        sfbb: przq + tzzf
+                          przq: wcqd * njrr
+                            njrr: bfpl + pmpp
+                            njrr result = (4 + 3) = 7
+                          przq result = (4 * 7) = 28
+                          tzzf: hmch + bdfh
+                          tzzf result = (11 + 2) = 13
+                        sfbb result = (28 + 13) = 41
+                      bjrp result = (92 * 41) = 3772
+                    zhrd result = (85245 + 3772) = 89017
+                  ngjh result = (2 * 89017) = 178034
+                tgtt result = (178034 * 2) = 356068
+                prcb: qhhl * svlq
+                  qhhl: whql + ppdf
+                    whql: nqdr + bznw
+                      nqdr: fmcn * nqrn
+                        nqrn: cncd * scgc
+                        nqrn result = (2 * 10) = 20
+                      nqdr result = (2 * 20) = 40
+                      bznw: qvlp + rmng
+                        qvlp: rwct + lbtj
+                        qvlp result = (8 + 3) = 11
+                      bznw result = (11 + 14) = 25
+                    whql result = (40 + 25) = 65
+                    ppdf: hmcz + hrhr
+                      hmcz: twgb / spqf
+                        twgb: dhzz * ncvh
+                        twgb result = (14 * 8) = 112
+                      hmcz result = (112 / 2) = 56
+                      hrhr: hjpp + jqmn
+                        hjpp: jwws - njgh
+                          jwws: lqpz + lzgj
+                            lqpz: bcdj / lnrj
+                              bcdj: fmcs + jtfp
+                                fmcs: rftj + mjhd
+                                  mjhd: ntcz * ftmq
+                                  mjhd result = (7 * 5) = 35
+                                fmcs result = (12 + 35) = 47
+                                jtfp: wsnq * sdlh
+                                jtfp result = (5 * 5) = 25
+                              bcdj result = (47 + 25) = 72
+                            lqpz result = (72 / 2) = 36
+                          jwws result = (36 + 8) = 44
+                        hjpp result = (44 - 13) = 31
+                        jqmn: lrmq + djlt
+                          djlt: hnvd * hfzn
+                          djlt result = (4 * 2) = 8
+                        jqmn result = (3 + 8) = 11
+                      hrhr result = (31 + 11) = 42
+                    ppdf result = (56 + 42) = 98
+                  qhhl result = (65 + 98) = 163
+                  svlq: fbmj * jhjh
+                    fbmj: qpfr + gswv
+                      qpfr: fsqj + jvnq
+                      qpfr result = (1 + 10) = 11
+                      gswv: lmpw * gbrw
+                        lmpw: lgnf + mmjb
+                        lmpw result = (11 + 2) = 13
+                      gswv result = (13 * 2) = 26
+                    fbmj result = (11 + 26) = 37
+                    jhjh: zdww + dpvc
+                      zdww: hwqw - cwvp
+                        hwqw: jwgb * mccv
+                          jwgb: vrnj + dhsl
+                            dhsl: mzpb * bnpd
+                            dhsl result = (13 * 4) = 52
+                          jwgb result = (1 + 52) = 53
+                          mccv: svgr * tcrh
+                            tcrh: gdct * pdqm
+                            tcrh result = (2 * 3) = 6
+                          mccv result = (2 * 6) = 12
+                        hwqw result = (53 * 12) = 636
+                        cwvp: snbz + ntct
+                          snbz: pqsz + hqmd
+                            pqsz: tqls / dwcp
+                              tqls: vslh * ttpm
+                                vslh: bwdd + nbnc
+                                  nbnc: qlsc + jqps
+                                    qlsc: jsqh + zzsh
+                                      jsqh: hcrc - fgwb
+                                        hcrc: plws + smtb
+                                          smtb: ffwq + cjlj
+                                          smtb result = (5 + 1) = 6
+                                        hcrc result = (7 + 6) = 13
+                                      jsqh result = (13 - 1) = 12
+                                    qlsc result = (12 + 12) = 24
+                                    jqps: rdlj + cjqj
+                                      cjqj: scfd - tcdm
+                                        scfd: wgjb + rvsd
+                                          wgjb: zrnd * wjrp
+                                          wgjb result = (7 * 2) = 14
+                                          rvsd: qjvt * dzfp
+                                          rvsd result = (3 * 5) = 15
+                                        scfd result = (14 + 15) = 29
+                                      cjqj result = (29 - 6) = 23
+                                    jqps result = (6 + 23) = 29
+                                  nbnc result = (24 + 29) = 53
+                                vslh result = (8 + 53) = 61
+                              tqls result = (61 * 2) = 122
+                            pqsz result = (122 / 2) = 61
+                            hqmd: qzcf + lsrd
+                              qzcf: flbd * lvzn
+                              qzcf result = (7 * 9) = 63
+                              lsrd: nrtn + czdg
+                                nrtn: mrmr * gpqr
+                                nrtn result = (4 * 4) = 16
+                              lsrd result = (16 + 3) = 19
+                            hqmd result = (63 + 19) = 82
+                          snbz result = (61 + 82) = 143
+                          ntct: jdvp * mpnq
+                            mpnq: zngn - rqgm
+                              zngn: dwrw + tllv
+                                dwrw: qgmg + dvvz
+                                  qgmg: dzcm + dwhg
+                                  qgmg result = (6 + 11) = 17
+                                  dvvz: rnff / fthn
+                                    rnff: ghdt * qgtd
+                                      ghdt: rcsp + qqqr
+                                      ghdt result = (6 + 1) = 7
+                                    rnff result = (7 * 2) = 14
+                                  dvvz result = (14 / 2) = 7
+                                dwrw result = (17 + 7) = 24
+                                tllv: pvsq + pgrj
+                                tllv result = (3 + 4) = 7
+                              zngn result = (24 + 7) = 31
+                            mpnq result = (31 - 2) = 29
+                          ntct result = (2 * 29) = 58
+                        cwvp result = (143 + 58) = 201
+                      zdww result = (636 - 201) = 435
+                      dpvc: qnlp * wwvn
+                        qnlp: bqcz * qltz
+                        qnlp result = (7 * 2) = 14
+                        wwvn: tzbp * fnjv
+                          fnjv: qdvc + rmrj
+                          fnjv result = (6 + 1) = 7
+                        wwvn result = (2 * 7) = 14
+                      dpvc result = (14 * 14) = 196
+                    jhjh result = (435 + 196) = 631
+                  svlq result = (37 * 631) = 23347
+                prcb result = (163 * 23347) = 3805561
+              sssb result = (356068 + 3805561) = 4161629
+            hptc result = (4161629 * 5) = 20808145
+            nsgf: jgsc + whmv
+              jgsc: hhls * pczl
+                hhls: cbsp * btpf
+                  cbsp: cwqt - lvnl
+                    cwqt: mhbl * rpzp
+                      rpzp: dmwv + drdd
+                        dmwv: wzhh * vcgq
+                          wzhh: rhmb * mrnj
+                            rhmb: mmsv - pzpj
+                              mmsv: jzld * jcvf
+                                jcvf: hglw - mqjp
+                                  hglw: vbzp + hrtz
+                                    vbzp: pfwf / rgbr
+                                      pfwf: tfdl * plwg
+                                        tfdl: qcdh + rzsp
+                                          rzsp: gfbv * jcnw
+                                          rzsp result = (3 * 3) = 9
+                                        tfdl result = (8 + 9) = 17
+                                      pfwf result = (17 * 2) = 34
+                                    vbzp result = (34 / 2) = 17
+                                    hrtz: hnmq / tlmh
+                                      hnmq: pzrs + hhns
+                                        pzrs: rdsh * pjtc
+                                          pjtc: gchb / pjbs
+                                            gchb: clms + nhzg
+                                              clms: tsgm * bwmz
+                                                bwmz: ztvd + gvhz
+                                                bwmz result = (2 + 5) = 7
+                                              clms result = (3 * 7) = 21
+                                              nhzg: jvjl / cmbj
+                                                jvjl: wbjv * ntsr
+                                                  wbjv: hldh * jqql
+                                                    jqql: ccgw + ljhd
+                                                      ccgw: rslq / cwfb
+                                                        rslq: sqfz + bqvr
+                                                          sqfz: sjjm * jdst
+                                                            jdst: ljrr + qzsl
+                                                              ljrr: tlch * dmzf
+                                                                dmzf: nrjz * nffh
+                                                                dmzf result = (3 * 3) = 9
+                                                              ljrr result = (3 * 9) = 27
+                                                            jdst result = (27 + 1) = 28
+                                                          sqfz result = (5 * 28) = 140
+                                                          bqvr: hwjj * mnlc
+                                                          bqvr result = (5 * 15) = 75
+                                                        rslq result = (140 + 75) = 215
+                                                      ccgw result = (215 / 5) = 43
+                                                      ljhd: chbr * lgzd
+                                                        lgzd: tjpn * rwrf
+                                                        lgzd result = (5 * 2) = 10
+                                                      ljhd result = (3 * 10) = 30
+                                                    jqql result = (43 + 30) = 73
+                                                  wbjv result = (2 * 73) = 146
+                                                jvjl result = (146 * 3) = 438
+                                                cmbj: czzh * qgbj
+                                                cmbj result = (2 * 3) = 6
+                                              nhzg result = (438 / 6) = 73
+                                            gchb result = (21 + 73) = 94
+                                          pjtc result = (94 / 2) = 47
+                                        pzrs result = (3 * 47) = 141
+                                      hnmq result = (141 + 15) = 156
+                                      tlmh: zpln * lbdj
+                                      tlmh result = (3 * 2) = 6
+                                    hrtz result = (156 / 6) = 26
+                                  hglw result = (17 + 26) = 43
+                                jcvf result = (43 - 4) = 39
+                              mmsv result = (4 * 39) = 156
+                              pzpj: mwcq + lzgn
+                                mwcq: tvnq * jgzm
+                                  tvnq: rdmw + sljz
+                                    rdmw: bjnc * przw
+                                    rdmw result = (2 * 3) = 6
+                                  tvnq result = (6 + 7) = 13
+                                mwcq result = (13 * 2) = 26
+                              pzpj result = (26 + 3) = 29
+                            rhmb result = (156 - 29) = 127
+                          wzhh result = (127 * 2) = 254
+                        dmwv result = (254 * 5) = 1270
+                        drdd: lhnl + pvrw
+                          lhnl: zlwz * qmjm
+                            zlwz: rlmv * jwqm
+                              rlmv: qbjs + lqpw
+                              rlmv result = (4 + 3) = 7
+                              jwqm: glfv + jrtd
+                                glfv: tjvp - ddbn
+                                  tjvp: qzsh * stjd
+                                    qzsh: glnl + zjjc
+                                      glnl: rggw * smfh
+                                      glnl result = (15 * 3) = 45
+                                    qzsh result = (45 + 2) = 47
+                                  tjvp result = (47 * 4) = 188
+                                  ddbn: vqvh - zcbf
+                                    vqvh: zchw * wjlr
+                                      wjlr: tdsq * dndf
+                                      wjlr result = (2 * 17) = 34
+                                    vqvh result = (2 * 34) = 68
+                                    zcbf: jdfp / ddwp
+                                      jdfp: vggs - vlzj
+                                        vggs: zcgt * dlhf
+                                        vggs result = (7 * 3) = 21
+                                      jdfp result = (21 - 7) = 14
+                                    zcbf result = (14 / 2) = 7
+                                  ddbn result = (68 - 7) = 61
+                                glfv result = (188 - 61) = 127
+                                jrtd: pbhj * drdn
+                                  pbhj: gqrv * cssb
+                                  pbhj result = (3 * 2) = 6
+                                jrtd result = (6 * 5) = 30
+                              jwqm result = (127 + 30) = 157
+                            zlwz result = (7 * 157) = 1099
+                          lhnl result = (1099 * 2) = 2198
+                          pvrw: qgzn * gbjb
+                            gbjb: zqzl - zsvw
+                              zqzl: jwsw + wtpp
+                                jwsw: hdnp + lfcb
+                                  hdnp: rfjn / pbbv
+                                    rfjn: zlvr * mtzg
+                                      mtzg: vsmw + glwn
+                                        glwn: nrlf * zqzw
+                                        glwn result = (5 * 5) = 25
+                                      mtzg result = (1 + 25) = 26
+                                    rfjn result = (10 * 26) = 260
+                                  hdnp result = (260 / 4) = 65
+                                  lfcb: jtgr / dmzc
+                                    jtgr: hzvs - mlzs
+                                      hzvs: mnqm * tlhm
+                                        tlhm: fzdc + tdgz
+                                          fzdc: psrr + wpgn
+                                            psrr: dglc / qzpm
+                                              dglc: dpsr + gjtr
+                                                dpsr: qpcc * whzr
+                                                dpsr result = (4 * 2) = 8
+                                              dglc result = (8 + 16) = 24
+                                            psrr result = (24 / 2) = 12
+                                            wpgn: gfqs * rdtb
+                                              rdtb: plpt * rjmq
+                                              rdtb result = (7 * 3) = 21
+                                            wpgn result = (2 * 21) = 42
+                                          fzdc result = (12 + 42) = 54
+                                          tdgz: mlsm * hrhg
+                                          tdgz result = (5 * 5) = 25
+                                        tlhm result = (54 + 25) = 79
+                                      hzvs result = (2 * 79) = 158
+                                      mlzs: tgzd * zrlj
+                                        zrlj: dzss * npwf
+                                          npwf: vmwl * sqsf
+                                          npwf result = (3 * 2) = 6
+                                        zrlj result = (2 * 6) = 12
+                                      mlzs result = (2 * 12) = 24
+                                    jtgr result = (158 - 24) = 134
+                                  lfcb result = (134 / 2) = 67
+                                jwsw result = (65 + 67) = 132
+                                wtpp: bdpt * pdsw
+                                  bdpt: dvjc + jwdw
+                                  bdpt result = (15 + 2) = 17
+                                  pdsw: nfsz + wcdl
+                                    wcdl: qmhz + vbsl
+                                      qmhz: mbjq * gsdj
+                                      qmhz result = (4 * 4) = 16
+                                    wcdl result = (16 + 1) = 17
+                                  pdsw result = (6 + 17) = 23
+                                wtpp result = (17 * 23) = 391
+                              zqzl result = (132 + 391) = 523
+                              zsvw: thdb * msnl
+                                msnl: bdqt * tqvv
+                                msnl result = (2 * 11) = 22
+                              zsvw result = (2 * 22) = 44
+                            gbjb result = (523 - 44) = 479
+                          pvrw result = (2 * 479) = 958
+                        drdd result = (2198 + 958) = 3156
+                      rpzp result = (1270 + 3156) = 4426
+                    cwqt result = (12 * 4426) = 53112
+                    lvnl: rldr + dlgm
+                      rldr: smbt + zsdd
+                        smbt: ggvr + cmvs
+                          cmvs: gtmz / gftq
+                            gtmz: pljs + wpqr
+                              pljs: qttw * tbgj
+                                qttw: vszf * dtpl
+                                qttw result = (4 * 5) = 20
+                                tbgj: chqg + ttgf
+                                tbgj result = (6 + 11) = 17
+                              pljs result = (20 * 17) = 340
+                              wpqr: vbjr * bdnw
+                                bdnw: jtnv * dlfv
+                                  jtnv: wdzq - ptwq
+                                    wdzq: bbrp * hszs
+                                    wdzq result = (5 * 2) = 10
+                                  jtnv result = (10 - 3) = 7
+                                bdnw result = (7 * 2) = 14
+                              wpqr result = (6 * 14) = 84
+                            gtmz result = (340 + 84) = 424
+                            gftq: ddtv * rrwf
+                            gftq result = (2 * 4) = 8
+                          cmvs result = (424 / 8) = 53
+                        smbt result = (14 + 53) = 67
+                        zsdd: fpwt * thdj
+                          fpwt: bpbn * cmbd
+                            cmbd: mrtf + bzqs
+                              mrtf: fcnn * cbnz
+                                cbnz: mhbm + trhj
+                                cbnz result = (1 + 10) = 11
+                              mrtf result = (2 * 11) = 22
+                            cmbd result = (22 + 1) = 23
+                          fpwt result = (2 * 23) = 46
+                          thdj: jnzp + tlmw
+                          thdj result = (4 + 3) = 7
+                        zsdd result = (46 * 7) = 322
+                      rldr result = (67 + 322) = 389
+                      dlgm: bhgd * wjqj
+                        bhgd: sgfp * pgtw
+                          sgfp: vwvh + gbrq
+                          sgfp result = (9 + 1) = 10
+                        bhgd result = (10 * 6) = 60
+                        wjqj: wftb * dtsb
+                          dtsb: smsg / blmc
+                            smsg: qqjp * lbzz
+                              lbzz: mjjj + bwlt
+                                mjjj: gffh + dhtc
+                                  gffh: ltcg * tjls
+                                    tjls: bbtf * lgzq
+                                    tjls result = (2 * 4) = 8
+                                  gffh result = (3 * 8) = 24
+                                  dhtc: vlcq * bzsd
+                                  dhtc result = (7 * 7) = 49
+                                mjjj result = (24 + 49) = 73
+                                bwlt: wghs * bchp
+                                  bchp: mgvq + vndq
+                                    mgvq: zmnd + jdwd
+                                      jdwd: dwpf + dldv
+                                        dldv: hfrl * pgvm
+                                          hfrl: fcgp * dcfr
+                                          hfrl result = (3 * 3) = 9
+                                        dldv result = (9 * 2) = 18
+                                      jdwd result = (4 + 18) = 22
+                                    mgvq result = (1 + 22) = 23
+                                    vndq: zczt * zvln
+                                    vndq result = (2 * 3) = 6
+                                  bchp result = (23 + 6) = 29
+                                bwlt result = (2 * 29) = 58
+                              lbzz result = (73 + 58) = 131
+                            smsg result = (3 * 131) = 393
+                          dtsb result = (393 / 3) = 131
+                        wjqj result = (2 * 131) = 262
+                      dlgm result = (60 * 262) = 15720
+                    lvnl result = (389 + 15720) = 16109
+                  cbsp result = (53112 - 16109) = 37003
+                hhls result = (37003 * 4) = 148012
+                pczl: hwnc * gcbl
+                  gcbl: gwrj + zqwn
+                  gcbl result = (1 + 10) = 11
+                pczl result = (2 * 11) = 22
+              jgsc result = (148012 * 22) = 3256264
+              whmv: lmtz + fdpt
+                lmtz: dcnt * dfwf
+                  dcnt: rcrp * lqnq
+                    rcrp: fgvt + czvz
+                      fgvt: bnzf * nqqq
+                        bnzf: fznd + tzgb
+                          tzgb: qrdf * blrj
+                            blrj: bmfz + tmwr
+                            blrj result = (1 + 5) = 6
+                          tzgb result = (6 * 6) = 36
+                        bnzf result = (1 + 36) = 37
+                        nqqq: wlbd * prdw
+                          wlbd: qtts / hdzn
+                            qtts: fshv * sspd
+                              fshv: rdsl * dpwb
+                                dpwb: jclp - hsgs
+                                dpwb result = (13 - 2) = 11
+                              fshv result = (2 * 11) = 22
+                              sspd: ntpl * srjg
+                              sspd result = (3 * 2) = 6
+                            qtts result = (22 * 6) = 132
+                            hdzn: stcd * fjnw
+                            hdzn result = (2 * 3) = 6
+                          wlbd result = (132 / 6) = 22
+                        nqqq result = (22 * 5) = 110
+                      fgvt result = (37 * 110) = 4070
+                      czvz: pshd * hdnj
+                        pshd: ssql + gjnt
+                        pshd result = (15 + 4) = 19
+                        hdnj: mgtm / dnhd
+                          mgtm: sfcp * bhvz
+                            sfcp: rncf + gtsg
+                              rncf: nwhd * zdbv
+                                nwhd: cnqd + zczp
+                                  zczp: lmpr + gdhh
+                                  zczp result = (3 + 3) = 6
+                                nwhd result = (4 + 6) = 10
+                                zdbv: zqmp + dhlv
+                                  zqmp: cpss * phcp
+                                    phcp: blhn * sslf
+                                    phcp result = (2 * 3) = 6
+                                  zqmp result = (4 * 6) = 24
+                                zdbv result = (24 + 5) = 29
+                              rncf result = (10 * 29) = 290
+                              gtsg: tdtw * wcrg
+                                tdtw: lwgm * hvfm
+                                tdtw result = (3 * 3) = 9
+                              gtsg result = (9 * 3) = 27
+                            sfcp result = (290 + 27) = 317
+                          mgtm result = (317 * 3) = 951
+                        hdnj result = (951 / 3) = 317
+                      czvz result = (19 * 317) = 6023
+                    rcrp result = (4070 + 6023) = 10093
+                  dcnt result = (10093 * 2) = 20186
+                lmtz result = (20186 * 20) = 403720
+                fdpt: snfh + sqhp
+                  snfh: fwjg * jlfv
+                    fwjg: vsrq + rlcd
+                      vsrq: fbtj * shtq
+                        fbtj: rvjn + lttt
+                          rvjn: pgbm + rnln
+                            pgbm: fqdp * wvbt
+                              wvbt: gdpc + tzvp
+                              wvbt result = (14 + 17) = 31
+                            pgbm result = (15 * 31) = 465
+                            rnln: gshq * nlhg
+                              gshq: bbgq + mbcz
+                                bbgq: vhld * wfsg
+                                  wfsg: vrwj + jsjl
+                                    vrwj: lszc * rlls
+                                      rlls: hsbt * jbvj
+                                        hsbt: vqbr + tvlp
+                                          tvlp: dfbc * cnfs
+                                          tvlp result = (5 * 2) = 10
+                                        hsbt result = (1 + 10) = 11
+                                        jbvj: djbn + lqts
+                                        jbvj result = (5 + 2) = 7
+                                      rlls result = (11 * 7) = 77
+                                    vrwj result = (2 * 77) = 154
+                                    jsjl: vqsv - gvfd
+                                      vqsv: dtbg / gddf
+                                        dtbg: jqjv + tzzl
+                                          jqjv: nrhh + vzsr
+                                            nrhh: tdbt * jphn
+                                              tdbt: fdvw + gmvw
+                                                fdvw: cbds * mvwl
+                                                fdvw result = (7 * 14) = 98
+                                                gmvw: ldmc + dhhd
+                                                  ldmc: vhbp * hvpn
+                                                    vhbp: mljf * qmgj
+                                                      qmgj: zhwz * nsvd
+                                                      qmgj result = (3 * 2) = 6
+                                                    vhbp result = (2 * 6) = 12
+                                                  ldmc result = (12 * 2) = 24
+                                                gmvw result = (24 + 5) = 29
+                                              tdbt result = (98 + 29) = 127
+                                            nrhh result = (127 * 2) = 254
+                                            vzsr: wclg * cgdt
+                                              cgdt: dqdr + jgpl
+                                                dqdr: bcvm * qshp
+                                                  qshp: jflf * gbgg
+                                                  qshp result = (4 * 4) = 16
+                                                dqdr result = (6 * 16) = 96
+                                                jgpl: blzv - rstq
+                                                  blzv: lhgs * ntqj
+                                                    lhgs: fblr + jnns
+                                                    lhgs result = (2 + 5) = 7
+                                                  blzv result = (7 * 2) = 14
+                                                jgpl result = (14 - 1) = 13
+                                              cgdt result = (96 + 13) = 109
+                                            vzsr result = (2 * 109) = 218
+                                          jqjv result = (254 + 218) = 472
+                                          tzzl: mvbf * mcjw
+                                            mvbf: zbmz + sqsh
+                                              zbmz: lvws + qfvl
+                                                lvws: qnwd * llvh
+                                                lvws result = (16 * 2) = 32
+                                              zbmz result = (32 + 1) = 33
+                                              sqsh: djvj * rrhz
+                                                djvj: zgff + qtgs
+                                                djvj result = (5 + 3) = 8
+                                                rrhz: sthp * jlrg
+                                                rrhz result = (4 * 2) = 8
+                                              sqsh result = (8 * 8) = 64
+                                            mvbf result = (33 + 64) = 97
+                                            mcjw: cqmd * qdqd
+                                            mcjw result = (3 * 4) = 12
+                                          tzzl result = (97 * 12) = 1164
+                                        dtbg result = (472 + 1164) = 1636
+                                      vqsv result = (1636 / 4) = 409
+                                      gvfd: prcs * llms
+                                      gvfd result = (4 * 15) = 60
+                                    jsjl result = (409 - 60) = 349
+                                  wfsg result = (154 + 349) = 503
+                                bbgq result = (2 * 503) = 1006
+                                mbcz: cqbz * dbnp
+                                mbcz result = (3 * 5) = 15
+                              gshq result = (1006 + 15) = 1021
+                            rnln result = (1021 * 2) = 2042
+                          rvjn result = (465 + 2042) = 2507
+                          lttt: gqfd + vcmb
+                            gqfd: gctg - cnrn
+                              gctg: jfwv * ddrm
+                                ddrm: hwsj + zgfn
+                                  hwsj: tndd + jvfw
+                                    tndd: vjhh * nqrm
+                                      nqrm: dnwp * zpdw
+                                      nqrm result = (5 * 2) = 10
+                                    tndd result = (4 * 10) = 40
+                                    jvfw: qbms - ztlr
+                                      qbms: dbbf * sssz
+                                      qbms result = (8 * 2) = 16
+                                    jvfw result = (16 - 3) = 13
+                                  hwsj result = (40 + 13) = 53
+                                  zgfn: sswz * dvts
+                                    dvts: qlfm + gjhl
+                                    dvts result = (4 + 9) = 13
+                                  zgfn result = (2 * 13) = 26
+                                ddrm result = (53 + 26) = 79
+                              gctg result = (2 * 79) = 158
+                              cnrn: zdjs * wgnb
+                              cnrn result = (3 * 13) = 39
+                            gqfd result = (158 - 39) = 119
+                            vcmb: tpvh * gvrv
+                              tpvh: fpvz + ftvh
+                                fpvz: mpmb + gmpf
+                                  gmpf: jgqf + sfpm
+                                    sfpm: rbhr * rpzf
+                                    sfpm result = (3 * 5) = 15
+                                  gmpf result = (8 + 15) = 23
+                                fpvz result = (6 + 23) = 29
+                              tpvh result = (29 + 12) = 41
+                            vcmb result = (41 * 2) = 82
+                          lttt result = (119 + 82) = 201
+                        fbtj result = (2507 + 201) = 2708
+                        shtq: lcmv - sjpf
+                          lcmv: ffjb * lrgc
+                          lcmv result = (2 * 12) = 24
+                          sjpf: qdfb / drbs
+                          sjpf result = (14 / 2) = 7
+                        shtq result = (24 - 7) = 17
+                      vsrq result = (2708 * 17) = 46036
+                      rlcd: hqqj * tvwz
+                        hqqj: rhzz * mmsz
+                          rhzz: tnpw + gtwh
+                            tnpw: mljg * vrcp
+                            tnpw result = (14 * 2) = 28
+                            gtwh: fwjb + hvzs
+                              fwjb: qphz + fjrb
+                              fwjb result = (4 + 7) = 11
+                            gtwh result = (11 + 4) = 15
+                          rhzz result = (28 + 15) = 43
+                        hqqj result = (43 * 4) = 172
+                        tvwz: bpgc * jrqd
+                          jrqd: whfm + nhsv
+                            nhsv: fbts * npfl
+                            nhsv result = (3 * 2) = 6
+                          jrqd result = (18 + 6) = 24
+                        tvwz result = (12 * 24) = 288
+                      rlcd result = (172 * 288) = 49536
+                    fwjg result = (46036 + 49536) = 95572
+                    jlfv: flfm + jphz
+                      flfm: btwv * wljb
+                      flfm result = (3 * 3) = 9
+                      jphz: sdmj * bvmn
+                        sdmj: tntc * lbhn
+                        sdmj result = (5 * 5) = 25
+                      jphz result = (25 * 2) = 50
+                    jlfv result = (9 + 50) = 59
+                  snfh result = (95572 * 59) = 5638748
+                  sqhp: cwff * vljv
+                    cwff: lghf + vwhv
+                      lghf: rtjh - nsfl
+                        rtjh: bqbv * zgjr
+                        rtjh result = (11 * 2) = 22
+                      lghf result = (22 - 5) = 17
+                      vwhv: brwh + zspc
+                        brwh: qsff + rntb
+                        brwh result = (4 + 6) = 10
+                      vwhv result = (10 + 16) = 26
+                    cwff result = (17 + 26) = 43
+                    vljv: mbqh + rbpg
+                      mbqh: bcrt * pvll
+                        bcrt: gwzm * mfpq
+                        bcrt result = (3 * 5) = 15
+                      mbqh result = (15 * 5) = 75
+                      rbpg: lpjc + fjrh
+                        lpjc: zltv * tnfz
+                          tnfz: vpgr + jgzp
+                            jgzp: rhtt * nfch
+                            jgzp result = (3 * 2) = 6
+                          tnfz result = (5 + 6) = 11
+                        lpjc result = (19 * 11) = 209
+                        fjrh: hvlj / vgsd
+                          hvlj: swjf * cldn
+                            cldn: grmw - sqft
+                              grmw: cjtm * vvwm
+                              grmw result = (11 * 3) = 33
+                              sqft: ccds * bmsw
+                              sqft result = (2 * 5) = 10
+                            cldn result = (33 - 10) = 23
+                          hvlj result = (2 * 23) = 46
+                        fjrh result = (46 / 2) = 23
+                      rbpg result = (209 + 23) = 232
+                    vljv result = (75 + 232) = 307
+                  sqhp result = (43 * 307) = 13201
+                fdpt result = (5638748 + 13201) = 5651949
+              whmv result = (403720 + 5651949) = 6055669
+            nsgf result = (3256264 + 6055669) = 9311933
+          qzjc result = (20808145 * 9311933) = 193764052094285
+          fcfh: whmw / ccsj
+            whmw: gjls + wjmn
+              gjls: jdls * zrhf
+                jdls: ljsp + vhbh
+                  vhbh: nszb * slhr
+                    slhr: gjgv + jgfn
+                      gjgv: hczh + zfrg
+                      gjgv result = (2 + 5) = 7
+                    slhr result = (7 + 2) = 9
+                  vhbh result = (12 * 9) = 108
+                jdls result = (5 + 108) = 113
+              gjls result = (113 * 2) = 226
+              wjmn: cbdg * vqgg
+                vqgg: nfsh - vshw
+                  nfsh: tgrl * pfzp
+                    tgrl: bwvn - bzpv
+                      bwvn: qzqw / hdqm
+                        qzqw: jrqf + gbtf
+                          jrqf: hpgr / htwh
+                            hpgr: hfhj + gggs
+                              hfhj: ffvb * rwhq
+                                ffvb: dcsl + gzss
+                                  dcsl: lspc * jhbm
+                                    lspc: jgsq / vmmd
+                                      jgsq: rjgp + srwn
+                                        rjgp: jtnm * vclt
+                                          jtnm: vfdm - pqlg
+                                          jtnm result = (13 - 2) = 11
+                                          vclt: jphh * wrtp
+                                          vclt result = (2 * 10) = 20
+                                        rjgp result = (11 * 20) = 220
+                                        srwn: fnnr * mtvq
+                                        srwn result = (2 * 3) = 6
+                                      jgsq result = (220 + 6) = 226
+                                    lspc result = (226 / 2) = 113
+                                  dcsl result = (113 * 2) = 226
+                                  gzss: hngg * pljp
+                                    hngg: lvmq * tfbr
+                                      tfbr: bpzw + nmpf
+                                      tfbr result = (2 + 5) = 7
+                                    hngg result = (3 * 7) = 21
+                                    pljp: cfvp + gvzc
+                                    pljp result = (1 + 6) = 7
+                                  gzss result = (21 * 7) = 147
+                                ffvb result = (226 + 147) = 373
+                              hfhj result = (373 * 2) = 746
+                              gggs: pzvd * bcrc
+                                bcrc: gcnm * gtvh
+                                  gcnm: dptq + pstp
+                                    dptq: jtrb * jzql
+                                    dptq result = (7 * 7) = 49
+                                    pstp: bhvf * ntwq
+                                      ntwq: tlvm * hfmv
+                                        tlvm: dfhs - rqbv
+                                        tlvm result = (14 - 1) = 13
+                                      ntwq result = (13 * 2) = 26
+                                    pstp result = (3 * 26) = 78
+                                  gcnm result = (49 + 78) = 127
+                                bcrc result = (127 * 2) = 254
+                              gggs result = (4 * 254) = 1016
+                            hpgr result = (746 + 1016) = 1762
+                          jrqf result = (1762 / 2) = 881
+                          gbtf: qnpj / nbdb
+                            qnpj: zpjz + zbdb
+                              zpjz: fwdw + zrbf
+                                fwdw: fsrl * tzlq
+                                fwdw result = (12 * 18) = 216
+                                zrbf: bjvv - qplp
+                                  bjvv: sqlt * csmn
+                                    csmn: tlpr + hhmh
+                                      tlpr: jscf / qlfj
+                                        jscf: cfrf + fmzt
+                                          cfrf: gdnc + tnpv
+                                            gdnc: hbqp * wzgv
+                                              wzgv: dmdl + bbjt
+                                                dmdl: glbd * rhwj
+                                                  glbd: gdqf * mvhs
+                                                  glbd result = (4 * 3) = 12
+                                                dmdl result = (12 * 3) = 36
+                                                bbjt: wcbr * qzrw
+                                                  wcbr: pwjq + fpcb
+                                                    pwjq: gjlc * cllm
+                                                    pwjq result = (11 * 2) = 22
+                                                    fpcb: pqzf * ztnz
+                                                    fpcb result = (3 * 3) = 9
+                                                  wcbr result = (22 + 9) = 31
+                                                bbjt result = (31 * 3) = 93
+                                              wzgv result = (36 + 93) = 129
+                                            gdnc result = (4 * 129) = 516
+                                            tnpv: tqtm - zpqb
+                                              tqtm: jndl * rvfp
+                                                jndl: jjtd + wgpw
+                                                  jjtd: srwh * zmdm
+                                                    zmdm: hpds - mscq
+                                                      hpds: tbcs / tjzb
+                                                        tbcs: vrtl + qqgw
+                                                          vrtl: npzr * wnjg
+                                                            npzr: sgbm - cmfj
+                                                              sgbm: mpmv / hmtp
+                                                                mpmv: vmfl + zpjp
+                                                                  vmfl: mfwc + wjtr
+                                                                    mfwc: btbl * ssns
+                                                                      btbl: rvpw + vtrn
+                                                                        rvpw: jgbn + mlqs
+                                                                        rvpw result = (20 + 17) = 37
+                                                                        vtrn: mjwl + vdnm
+                                                                          vdnm: dvdd * vmff
+                                                                            dvdd: gwvv + nbjn
+                                                                            dvdd result = (17 + 2) = 19
+                                                                          vdnm result = (19 * 2) = 38
+                                                                        vtrn result = (4 + 38) = 42
+                                                                      btbl result = (37 + 42) = 79
+                                                                    mfwc result = (79 * 2) = 158
+                                                                    wjtr: srdl + gnff
+                                                                      srdl: rzwm + srfj
+                                                                        rzwm: wwzl * mggl
+                                                                          wwzl: qbtg + wpdn
+                                                                            qbtg: znfv * csqv
+                                                                              znfv: tfwf + wlbf
+                                                                                tfwf: mpfn * rthc
+                                                                                tfwf result = (3 * 2) = 6
+                                                                              znfv result = (6 + 1) = 7
+                                                                            qbtg result = (7 * 5) = 35
+                                                                          wwzl result = (35 + 2) = 37
+                                                                        rzwm result = (37 * 2) = 74
+                                                                        srfj: wtjs * mnjn
+                                                                          wtjs: pvqc + wsqz
+                                                                            pvqc: lhfr * bhsf
+                                                                            pvqc result = (7 * 3) = 21
+                                                                          wtjs result = (21 + 2) = 23
+                                                                        srfj result = (23 * 2) = 46
+                                                                      srdl result = (74 + 46) = 120
+                                                                    wjtr result = (120 + 7) = 127
+                                                                  vmfl result = (158 + 127) = 285
+                                                                  zpjp: shbq / cjcg
+                                                                    shbq: bhnm + nchz
+                                                                      bhnm: cpns * ptmb
+                                                                      bhnm result = (10 * 19) = 190
+                                                                      nchz: wqlv - mpql
+                                                                        wqlv: tmdw * mbct
+                                                                          mbct: jnrl + hncw
+                                                                            jnrl: dvvp / sqvg
+                                                                              dvvp: gtlq * vhvp
+                                                                                vhvp: dqvb * zjcc
+                                                                                  zjcc: cqsf / mdhv
+                                                                                    cqsf: gtth * tzgm
+                                                                                      gtth: dqwc * jbbm
+                                                                                        dqwc: ttdg + rvwf
+                                                                                          ttdg: bhqd * nzpd
+                                                                                            nzpd: tbqr * mrns
+                                                                                            nzpd result = (3 * 4) = 12
+                                                                                          ttdg result = (2 * 12) = 24
+                                                                                          rvwf: btbr / jrgv
+                                                                                            btbr: lpgc * lqcv
+                                                                                              lpgc: rhvl + zjsj
+                                                                                                rhvl: zswn + jlnr
+                                                                                                  zswn: wwvr * hgwl
+                                                                                                    wwvr: jtfc + gzdv
+                                                                                                      jtfc: fwbq * hbjc
+                                                                                                      jtfc result = (2 * 3) = 6
+                                                                                                    wwvr result = (6 + 1) = 7
+                                                                                                  zswn result = (7 * 3) = 21
+                                                                                                  jlnr: pnqc + scfh
+                                                                                                    scfh: vltb * rfnd
+                                                                                                      rfnd: bmwm + fpvc
+                                                                                                      rfnd result = (5 + 2) = 7
+                                                                                                    scfh result = (2 * 7) = 14
+                                                                                                  jlnr result = (2 + 14) = 16
+                                                                                                rhvl result = (21 + 16) = 37
+                                                                                                zjsj: shtg + dbrm
+                                                                                                  shtg: nqrb * llpw
+                                                                                                  shtg result = (4 * 2) = 8
+                                                                                                  dbrm: bhdq + cffj
+                                                                                                    cffj: dqhf + msqj
+                                                                                                      dqhf: vfll - vbgr
+                                                                                                        vbgr: gzwm * dnnv
+                                                                                                        vbgr result = (3 * 2) = 6
+                                                                                                      dqhf result = (18 - 6) = 12
+                                                                                                    cffj result = (12 + 7) = 19
+                                                                                                  dbrm result = (10 + 19) = 29
+                                                                                                zjsj result = (8 + 29) = 37
+                                                                                              lpgc result = (37 + 37) = 74
+                                                                                            btbr result = (74 * 3) = 222
+                                                                                          rvwf result = (222 / 6) = 37
+                                                                                        dqwc result = (24 + 37) = 61
+                                                                                      gtth result = (61 * 2) = 122
+                                                                                    cqsf result = (122 * 4) = 488
+                                                                                  zjcc result = (488 / 8) = 61
+                                                                                vhvp result = (5 * 61) = 305
+                                                                              dvvp result = (2 * 305) = 610
+                                                                            jnrl result = (610 / 5) = 122
+                                                                            hncw: nthq / rhfj
+                                                                              nthq: vqns + qnvz
+                                                                                vqns: pzbt * jjgt
+                                                                                  pzbt: nzcm - wvrn
+                                                                                    nzcm: phqh * qhqq
+                                                                                      qhqq: pzmn - lnsr
+                                                                                        pzmn: lgdh / bjsp
+                                                                                          lgdh: vsrv + bpnb
+                                                                                            vsrv: lpvp * zcnd
+                                                                                              zcnd: wnwl + rldz
+                                                                                                wnwl: nsmj * wlhb
+                                                                                                  wlhb: pmjh * nznm
+                                                                                                  wlhb result = (9 * 3) = 27
+                                                                                                wnwl result = (3 * 27) = 81
+                                                                                                rldz: gfjt * gshf
+                                                                                                  gshf: swnj * hlvb
+                                                                                                  gshf result = (5 * 5) = 25
+                                                                                                rldz result = (2 * 25) = 50
+                                                                                              zcnd result = (81 + 50) = 131
+                                                                                            vsrv result = (7 * 131) = 917
+                                                                                            bpnb: zzmv * tcdr
+                                                                                              zzmv: fjpf - hhtv
+                                                                                                fjpf: bqcd + znrq
+                                                                                                  bqcd: gbtp * rwmg
+                                                                                                  bqcd result = (4 * 2) = 8
+                                                                                                fjpf result = (8 + 2) = 10
+                                                                                              zzmv result = (10 - 3) = 7
+                                                                                              tcdr: mgvf - gwtz
+                                                                                                mgvf: mjlv / tjms
+                                                                                                  mjlv: vwfl + jgnv
+                                                                                                    vwfl: jlpn * rpzj
+                                                                                                      jlpn: qmjw * qlvw
+                                                                                                      jlpn result = (2 * 3) = 6
+                                                                                                      rpzj: nwgz + rrbm
+                                                                                                        nwgz: vfmq * qflb
+                                                                                                        nwgz result = (2 * 9) = 18
+                                                                                                      rpzj result = (18 + 1) = 19
+                                                                                                    vwfl result = (6 * 19) = 114
+                                                                                                    jgnv: pqpr + nsdq
+                                                                                                      pqpr: jbsb + sgwl
+                                                                                                        jbsb: jhrf + rmzm
+                                                                                                          jhrf: brrs * zdmg
+                                                                                                          jhrf result = (2 * 11) = 22
+                                                                                                          rmzm: gzjv * tgpw
+                                                                                                          rmzm result = (6 * 5) = 30
+                                                                                                        jbsb result = (22 + 30) = 52
+                                                                                                        sgwl: vhfz * tcjr
+                                                                                                          vhfz: qqwh / pmhv
+                                                                                                            qqwh: dssw * dcrw
+                                                                                                              dssw: fvfp + glvn
+                                                                                                                glvn: fsbt * hrdj
+                                                                                                                  hrdj: ccfs + vwhm
+                                                                                                                    ccfs: cgsq - nvzr
+                                                                                                                      cgsq: vzpg * pjcz
+                                                                                                                      cgsq result = (3 * 3) = 9
+                                                                                                                    ccfs result = (9 - 2) = 7
+                                                                                                                  hrdj result = (7 + 10) = 17
+                                                                                                                glvn result = (6 * 17) = 102
+                                                                                                              dssw result = (4 + 102) = 106
+                                                                                                            qqwh result = (106 * 2) = 212
+                                                                                                          vhfz result = (212 / 4) = 53
+                                                                                                        sgwl result = (53 * 5) = 265
+                                                                                                      pqpr result = (52 + 265) = 317
+                                                                                                      nsdq: qnmp * mvvg
+                                                                                                        mvvg: fvvl + snsv
+                                                                                                          fvvl: nglh / vpwq
+                                                                                                            nglh: qvqr - fcnw
+                                                                                                              qvqr: hcld * ptnq
+                                                                                                                hcld: zmfn * hhlw
+                                                                                                                hcld result = (2 * 3) = 6
+                                                                                                                ptnq: bvpd + sccw
+                                                                                                                  bvpd: bwll / mtll
+                                                                                                                    bwll: jcmb + jsbg
+                                                                                                                      jcmb: hgcq - dqdn
+                                                                                                                        hgcq: pbzj / ttnv
+                                                                                                                          pbzj: pltf - ftnl
+                                                                                                                            pltf: qhmb * wmjc
+                                                                                                                              qhmb: sshh + mwpv
+                                                                                                                                sshh: wdhd * qndb
+                                                                                                                                  qndb: nlvg - pctd
+                                                                                                                                    nlvg: nmhf / tqnp
+                                                                                                                                      nmhf: grht + zvrd
+                                                                                                                                        grht: gtjq + smvm
+                                                                                                                                          gtjq: fcml + ptnp
+                                                                                                                                            fcml: vvft * qhwd
+                                                                                                                                              vvft: lfms * hvgq
+                                                                                                                                              vvft result = (5 * 4) = 20
+                                                                                                                                            fcml result = (20 * 2) = 40
+                                                                                                                                          gtjq result = (40 + 4) = 44
+                                                                                                                                          smvm: qllh * dqqb
+                                                                                                                                            qllh: nrwm + lvww
+                                                                                                                                              nrwm: drcn * shpf
+                                                                                                                                                shpf: wzqb * tncd
+                                                                                                                                                shpf result = (5 * 3) = 15
+                                                                                                                                              nrwm result = (2 * 15) = 30
+                                                                                                                                              lvww: cwjh + tfsg
+                                                                                                                                                cwjh: zwbc + tjmm
+                                                                                                                                                  zwbc: wqnh + rhzt
+                                                                                                                                                    wqnh: hlds + gzcn
+                                                                                                                                                      gzcn: vhnv * hdmw
+                                                                                                                                                      gzcn result = (2 * 5) = 10
+                                                                                                                                                    wqnh result = (4 + 10) = 14
+                                                                                                                                                  zwbc result = (14 + 5) = 19
+                                                                                                                                                  tjmm: jflq * pdlm
+                                                                                                                                                  tjmm result = (4 * 13) = 52
+                                                                                                                                                cwjh result = (19 + 52) = 71
+                                                                                                                                              lvww result = (71 + 2) = 73
+                                                                                                                                            qllh result = (30 + 73) = 103
+                                                                                                                                          smvm result = (103 * 7) = 721
+                                                                                                                                        grht result = (44 + 721) = 765
+                                                                                                                                        zvrd: nzjf * lhfg
+                                                                                                                                          nzjf: zgzw * mchn
+                                                                                                                                            zgzw: ndvb * gjwj
+                                                                                                                                            zgzw result = (2 * 3) = 6
+                                                                                                                                          nzjf result = (6 * 3) = 18
+                                                                                                                                          lhfg: htqt + jrhh
+                                                                                                                                            htqt: rqmm / jhwd
+                                                                                                                                              rqmm: humn - jcmg
+                                                                                                                                                jcmg: dvmc * qbgs
+                                                                                                                                                  dvmc: ngvz / hssj
+                                                                                                                                                    ngvz: tmfl + ggml
+                                                                                                                                                      tmfl: ldzf * mwsh
+                                                                                                                                                        ldzf: dbdb + dhpm
+                                                                                                                                                        ldzf result = (16 + 1) = 17
+                                                                                                                                                        mwsh: mfbt + lfmq
+                                                                                                                                                          mfbt: dhld + nhth
+                                                                                                                                                          mfbt result = (9 + 6) = 15
+                                                                                                                                                        mwsh result = (15 + 8) = 23
+                                                                                                                                                      tmfl result = (17 * 23) = 391
+                                                                                                                                                      ggml: rmnm * lpfj
+                                                                                                                                                        rmnm: ncsj + zdnv
+                                                                                                                                                          ncsj: hscc * bwdl
+                                                                                                                                                            hscc: mbww * qsrh
+                                                                                                                                                              qsrh: mgcf + blhv
+                                                                                                                                                                mgcf: blmp + wtjp
+                                                                                                                                                                mgcf result = (1 + 6) = 7
+                                                                                                                                                              qsrh result = (7 + 2) = 9
+                                                                                                                                                            hscc result = (3 * 9) = 27
+                                                                                                                                                          ncsj result = (27 * 2) = 54
+                                                                                                                                                        rmnm result = (54 + 9) = 63
+                                                                                                                                                        lpfj: pwvb * pvnm
+                                                                                                                                                        lpfj result = (3 * 5) = 15
+                                                                                                                                                      ggml result = (63 * 15) = 945
+                                                                                                                                                    ngvz result = (391 + 945) = 1336
+                                                                                                                                                    hssj: pmlf * gswl
+                                                                                                                                                    hssj result = (4 * 2) = 8
+                                                                                                                                                  dvmc result = (1336 / 8) = 167
+                                                                                                                                                jcmg result = (167 * 2) = 334
+                                                                                                                                              rqmm result = (0 - 334) = -334
+                                                                                                                                            htqt result = (-334 / 3) = -111
+                                                                                                                                            jrhh: zjzb * qblg
+                                                                                                                                              zjzb: mlzl + lppb
+                                                                                                                                                mlzl: nshm * qgmd
+                                                                                                                                                mlzl result = (5 * 5) = 25
+                                                                                                                                                lppb: qjmb * lqss
+                                                                                                                                                lppb result = (4 * 4) = 16
+                                                                                                                                              zjzb result = (25 + 16) = 41
+                                                                                                                                              qblg: nllv * pvzf
+                                                                                                                                                pvzf: gpqt + njqg
+                                                                                                                                                pvzf result = (4 + 3) = 7
+                                                                                                                                              qblg result = (2 * 7) = 14
+                                                                                                                                            jrhh result = (41 * 14) = 574
+                                                                                                                                          lhfg result = (-111 + 574) = 463
+                                                                                                                                        zvrd result = (18 * 463) = 8334
+                                                                                                                                      nmhf result = (765 + 8334) = 9099
+                                                                                                                                    nlvg result = (9099 / 3) = 3033
+                                                                                                                                    pctd: wgpn * hzcv
+                                                                                                                                      wgpn: wjnn + wwls
+                                                                                                                                        wjnn: ttsj + tblq
+                                                                                                                                          tblq: mzrs * rqjt
+                                                                                                                                          tblq result = (3 * 5) = 15
+                                                                                                                                        wjnn result = (6 + 15) = 21
+                                                                                                                                      wgpn result = (21 + 8) = 29
+                                                                                                                                      hzcv: qhlq + ctbg
+                                                                                                                                        qhlq: bhlb + gcdt
+                                                                                                                                          gcdt: sbmj / pmbt
+                                                                                                                                            sbmj: dqht * szmr
+                                                                                                                                            sbmj result = (2 * 12) = 24
+                                                                                                                                          gcdt result = (24 / 2) = 12
+                                                                                                                                        qhlq result = (13 + 12) = 25
+                                                                                                                                      hzcv result = (25 + 6) = 31
+                                                                                                                                    pctd result = (29 * 31) = 899
+                                                                                                                                  qndb result = (3033 - 899) = 2134
+                                                                                                                                sshh result = (10 * 2134) = 21340
+                                                                                                                                mwpv: mdvt * rqpz
+                                                                                                                                  rqpz: clqw + jvqb
+                                                                                                                                    clqw: gbsr * cdjs
+                                                                                                                                    clqw result = (2 * 3) = 6
+                                                                                                                                    jvqb: vrgw + bbsp
+                                                                                                                                      bbsp: mgnz + rrqr
+                                                                                                                                        mgnz: pcgt + rslw
+                                                                                                                                          pcgt: jhrm * lqsv
+                                                                                                                                          pcgt result = (3 * 2) = 6
+                                                                                                                                        mgnz result = (6 + 2) = 8
+                                                                                                                                      bbsp result = (8 + 5) = 13
+                                                                                                                                    jvqb result = (12 + 13) = 25
+                                                                                                                                  rqpz result = (6 + 25) = 31
+                                                                                                                                mwpv result = (19 * 31) = 589
+                                                                                                                              qhmb result = (21340 + 589) = 21929
+                                                                                                                            pltf result = (21929 * 2) = 43858
+                                                                                                                            ftnl: hlpr * tsjh
+                                                                                                                              hlpr: svps * rbms
+                                                                                                                                svps: wjzn + dprl
+                                                                                                                                  wjzn: cbbh * tsct
+                                                                                                                                  wjzn result = (5 * 4) = 20
+                                                                                                                                  dprl: pjvs - glft
+                                                                                                                                    pjvs: jvlf / dwtw
+                                                                                                                                      jvlf: rrjt * gjdt
+                                                                                                                                        gjdt: pznw / zzdp
+                                                                                                                                          pznw: dwhv / pqbc
+                                                                                                                                            dwhv: mrbg * tchf
+                                                                                                                                              mrbg: jdld + mvvz
+                                                                                                                                                jdld: fgjr / qbnv
+                                                                                                                                                  fgjr: hlsh + qtqc
+                                                                                                                                                  fgjr result = (11 + 15) = 26
+                                                                                                                                                jdld result = (26 / 2) = 13
+                                                                                                                                                mvvz: gwrf + fqbm
+                                                                                                                                                  gwrf: glsb * qtcg
+                                                                                                                                                  gwrf result = (13 * 2) = 26
+                                                                                                                                                mvvz result = (26 + 2) = 28
+                                                                                                                                              mrbg result = (13 + 28) = 41
+                                                                                                                                            dwhv result = (41 * 4) = 164
+                                                                                                                                          pznw result = (164 / 2) = 82
+                                                                                                                                        gjdt result = (82 / 2) = 41
+                                                                                                                                      jvlf result = (5 * 41) = 205
+                                                                                                                                    pjvs result = (205 / 5) = 41
+                                                                                                                                  dprl result = (41 - 2) = 39
+                                                                                                                                svps result = (20 + 39) = 59
+                                                                                                                              hlpr result = (59 * 2) = 118
+                                                                                                                            ftnl result = (118 * 4) = 472
+                                                                                                                          pbzj result = (43858 - 472) = 43386
+                                                                                                                        hgcq result = (43386 / 3) = 14462
+                                                                                                                        dqdn: mllg + pfgv
+                                                                                                                          mllg: mphm + jrzn
+                                                                                                                            mphm: zpbp * ljcm
+                                                                                                                              zpbp: zqjb + pvbc
+                                                                                                                                zqjb: fmqp + lcrs
+                                                                                                                                zqjb result = (5 + 2) = 7
+                                                                                                                                pvbc: rghb + zchl
+                                                                                                                                  rghb: nrfd * dlmb
+                                                                                                                                  rghb result = (3 * 2) = 6
+                                                                                                                                pvbc result = (6 + 4) = 10
+                                                                                                                              zpbp result = (7 + 10) = 17
+                                                                                                                            mphm result = (17 * 13) = 221
+                                                                                                                            jrzn: vnch * rgrz
+                                                                                                                              vnch: bfzs * pfjt
+                                                                                                                                bfzs: zvht + jqpq
+                                                                                                                                bfzs result = (8 + 15) = 23
+                                                                                                                              vnch result = (23 * 2) = 46
+                                                                                                                            jrzn result = (46 * 2) = 92
+                                                                                                                          mllg result = (221 + 92) = 313
+                                                                                                                          pfgv: bbmg * dffp
+                                                                                                                            dffp: jqcd * gnjh
+                                                                                                                              gnjh: sfct + lmsp
+                                                                                                                                lmsp: qzrj + npvc
+                                                                                                                                lmsp result = (1 + 5) = 6
+                                                                                                                              gnjh result = (1 + 6) = 7
+                                                                                                                            dffp result = (4 * 7) = 28
+                                                                                                                          pfgv result = (15 * 28) = 420
+                                                                                                                        dqdn result = (313 + 420) = 733
+                                                                                                                      jcmb result = (14462 - 733) = 13729
+                                                                                                                      jsbg: prdv * nrhc
+                                                                                                                        prdv: jpvj * gnzq
+                                                                                                                          gnzq: zwzb + bpqv
+                                                                                                                            zwzb: pczp + ssqr
+                                                                                                                            zwzb result = (3 + 16) = 19
+                                                                                                                            bpqv: lsjh * fwmw
+                                                                                                                            bpqv result = (11 * 2) = 22
+                                                                                                                          gnzq result = (19 + 22) = 41
+                                                                                                                        prdv result = (2 * 41) = 82
+                                                                                                                        nrhc: qddw * njnn
+                                                                                                                        nrhc result = (5 * 2) = 10
+                                                                                                                      jsbg result = (82 * 10) = 820
+                                                                                                                    bwll result = (13729 + 820) = 14549
+                                                                                                                  bvpd result = (14549 / 3) = 4849
+                                                                                                                  sccw: tgcr * wvvc
+                                                                                                                    tgcr: jjjb + qrqn
+                                                                                                                    tgcr result = (4 + 3) = 7
+                                                                                                                    wvvc: wllz + fzdh
+                                                                                                                    wvvc result = (4 + 7) = 11
+                                                                                                                  sccw result = (7 * 11) = 77
+                                                                                                                ptnq result = (4849 + 77) = 4926
+                                                                                                              qvqr result = (6 * 4926) = 29556
+                                                                                                              fcnw: tjnv * gstg
+                                                                                                                tjnv: zwqh + pmcr
+                                                                                                                  pmcr: qbgj * lppq
+                                                                                                                    qbgj: dlvp * qzhc
+                                                                                                                    qbgj result = (5 * 3) = 15
+                                                                                                                  pmcr result = (15 * 4) = 60
+                                                                                                                tjnv result = (8 + 60) = 68
+                                                                                                                gstg: mrlw + ccft
+                                                                                                                  mrlw: jwpw * gfgr
+                                                                                                                  mrlw result = (2 * 3) = 6
+                                                                                                                gstg result = (6 + 1) = 7
+                                                                                                              fcnw result = (68 * 7) = 476
+                                                                                                            nglh result = (29556 - 476) = 29080
+                                                                                                          fvvl result = (29080 / 4) = 7270
+                                                                                                          snsv: tpwg * jgdz
+                                                                                                            jgdz: dtbt * clpj
+                                                                                                              dtbt: ngvd * lsqr
+                                                                                                              dtbt result = (2 * 3) = 6
+                                                                                                            jgdz result = (6 * 6) = 36
+                                                                                                          snsv result = (11 * 36) = 396
+                                                                                                        mvvg result = (7270 + 396) = 7666
+                                                                                                      nsdq result = (2 * 7666) = 15332
+                                                                                                    jgnv result = (317 + 15332) = 15649
+                                                                                                  mjlv result = (114 + 15649) = 15763
+                                                                                                mgvf result = (15763 / 5) = 3152
+                                                                                                gwtz: zzvq * hgpl
+                                                                                                  zzvq: tvmg + jcdm
+                                                                                                  zzvq result = (9 + 2) = 11
+                                                                                                  hgpl: wvtd * rccs
+                                                                                                  hgpl result = (3 * 9) = 27
+                                                                                                gwtz result = (11 * 27) = 297
+                                                                                              tcdr result = (3152 - 297) = 2855
+                                                                                            bpnb result = (7 * 2855) = 19985
+                                                                                          lgdh result = (917 + 19985) = 20902
+                                                                                        pzmn result = (20902 / 7) = 2986
+                                                                                        lnsr: ffnq * brmf
+                                                                                          ffnq: bmnd + gmnn
+                                                                                          ffnq result = (9 + 2) = 11
+                                                                                          brmf: rqhj + gpgb
+                                                                                            rqhj: qtcb * vfdv
+                                                                                              vfdv: gjzh * pzbn
+                                                                                              vfdv result = (13 * 2) = 26
+                                                                                            rqhj result = (2 * 26) = 52
+                                                                                          brmf result = (52 + 1) = 53
+                                                                                        lnsr result = (11 * 53) = 583
+                                                                                      qhqq result = (2986 - 583) = 2403
+                                                                                    nzcm result = (9 * 2403) = 21627
+                                                                                    wvrn: jvwz * crbm
+                                                                                      jvwz: vjsc * fhmb
+                                                                                        fhmb: smdd + cdwm
+                                                                                        fhmb result = (5 + 6) = 11
+                                                                                      jvwz result = (2 * 11) = 22
+                                                                                      crbm: rwqj * jrsj
+                                                                                        rwqj: rqgn - hscm
+                                                                                          rqgn: glpd * twzw
+                                                                                          rqgn result = (4 * 3) = 12
+                                                                                        rwqj result = (12 - 1) = 11
+                                                                                      crbm result = (11 * 3) = 33
+                                                                                    wvrn result = (22 * 33) = 726
+                                                                                  pzbt result = (21627 - 726) = 20901
+                                                                                vqns result = (20901 * 2) = 41802
+                                                                                qnvz: fhqt * vwgz
+                                                                                  fhqt: jqzc - dqps
+                                                                                    jqzc: gjnj / lhsl
+                                                                                      gjnj: mgfz * cwtz
+                                                                                        mgfz: vzfq * spzw
+                                                                                        mgfz result = (2 * 7) = 14
+                                                                                        cwtz: rhnh - wqbj
+                                                                                          rhnh: gmgb * tqfm
+                                                                                          rhnh result = (2 * 5) = 10
+                                                                                        cwtz result = (10 - 3) = 7
+                                                                                      gjnj result = (14 * 7) = 98
+                                                                                    jqzc result = (98 / 2) = 49
+                                                                                    dqps: crbj * ftrb
+                                                                                    dqps result = (3 * 3) = 9
+                                                                                  fhqt result = (49 - 9) = 40
+                                                                                qnvz result = (40 * 8) = 320
+                                                                              nthq result = (41802 + 320) = 42122
+                                                                            hncw result = (42122 / 2) = 21061
+                                                                          mbct result = (122 + 21061) = 21183
+                                                                        wqlv result = (2 * 21183) = 42366
+                                                                        mpql: gmjc * wdlm
+                                                                          wdlm: czfs + mmdb
+                                                                            czfs: lmwg * zsnc
+                                                                            czfs result = (11 * 2) = 22
+                                                                          wdlm result = (22 + 1) = 23
+                                                                        mpql result = (5 * 23) = 115
+                                                                      nchz result = (42366 - 115) = 42251
+                                                                    shbq result = (190 + 42251) = 42441
+                                                                  zpjp result = (42441 / 3) = 14147
+                                                                mpmv result = (285 + 14147) = 14432
+                                                              sgbm result = (14432 / 2) = 7216
+                                                              cmfj: fqlb * hcbn
+                                                                hcbn: dtht * fdfs
+                                                                hcbn result = (10 * 7) = 70
+                                                              cmfj result = (13 * 70) = 910
+                                                            npzr result = (7216 - 910) = 6306
+                                                          vrtl result = (6306 * 4) = 25224
+                                                          qqgw: vgpm * lsrl
+                                                            lsrl: dwwz * rtdz
+                                                              dwwz: wgsc + rrnc
+                                                                wgsc: ggcw + sbhl
+                                                                wgsc result = (2 + 15) = 17
+                                                              dwwz result = (17 + 12) = 29
+                                                            lsrl result = (29 * 13) = 377
+                                                          qqgw result = (2 * 377) = 754
+                                                        tbcs result = (25224 + 754) = 25978
+                                                      hpds result = (25978 / 2) = 12989
+                                                      mscq: vlft * vshg
+                                                        vshg: lrbv + tpgt
+                                                          lrbv: rqrs * shps
+                                                            rqrs: bjfj + cvbt
+                                                              cvbt: wlvn * cvjr
+                                                              cvbt result = (3 * 7) = 21
+                                                            rqrs result = (2 + 21) = 23
+                                                          lrbv result = (23 * 3) = 69
+                                                          tpgt: zhng * cnrq
+                                                            cnrq: zcgd / pljh
+                                                              zcgd: dfzv * jglb
+                                                                dfzv: fchw * wwcl
+                                                                dfzv result = (2 * 4) = 8
+                                                              zcgd result = (8 * 4) = 32
+                                                            cnrq result = (32 / 4) = 8
+                                                          tpgt result = (5 * 8) = 40
+                                                        vshg result = (69 + 40) = 109
+                                                      mscq result = (5 * 109) = 545
+                                                    zmdm result = (12989 - 545) = 12444
+                                                  jjtd result = (2 * 12444) = 24888
+                                                  wgpw: sjnc * jhgn
+                                                    sjnc: gmbj - dqpm
+                                                      gmbj: zfcn - rwhp
+                                                        zfcn: msgl + rrvw
+                                                          rrvw: rsmv * dnpg
+                                                            rsmv: qvcz * rbhb
+                                                              qvcz: mwvs + nvhd
+                                                              qvcz result = (3 + 4) = 7
+                                                            rsmv result = (7 * 2) = 14
+                                                          rrvw result = (14 * 2) = 28
+                                                        zfcn result = (4 + 28) = 32
+                                                      gmbj result = (32 - 3) = 29
+                                                      dqpm: gsvp * jlhr
+                                                      dqpm result = (3 * 3) = 9
+                                                    sjnc result = (29 - 9) = 20
+                                                    jhgn: lnrd / rftr
+                                                      lnrd: zfbl * hbgb
+                                                        hbgb: fgds + qtnm
+                                                          qtnm: qzbf + gjwh
+                                                            qzbf: fdmd + mntf
+                                                            qzbf result = (1 + 10) = 11
+                                                          qtnm result = (11 + 6) = 17
+                                                        hbgb result = (12 + 17) = 29
+                                                      lnrd result = (2 * 29) = 58
+                                                    jhgn result = (58 / 2) = 29
+                                                  wgpw result = (20 * 29) = 580
+                                                jndl result = (24888 + 580) = 25468
+                                              tqtm result = (25468 * 2) = 50936
+                                              zpqb: wbjr * sttm
+                                                wbjr: mdvc + qdlt
+                                                  mdvc: vtwc * fllg
+                                                  mdvc result = (5 * 5) = 25
+                                                wbjr result = (25 + 2) = 27
+                                                sttm: lfjg * rsjt
+                                                  lfjg: tjhc * njqp
+                                                  lfjg result = (3 * 3) = 9
+                                                sttm result = (9 * 3) = 27
+                                              zpqb result = (27 * 27) = 729
+                                            tnpv result = (50936 - 729) = 50207
+                                          cfrf result = (516 + 50207) = 50723
+                                          fmzt: fpqh * drdv
+                                          fmzt result = (5 * 5) = 25
+                                        jscf result = (50723 + 25) = 50748
+                                      tlpr result = (50748 / 3) = 16916
+                                      hhmh: bmhv / qcbm
+                                        bmhv: vrht * lbmp
+                                          vrht: vgnt * ftrh
+                                          vrht result = (3 * 5) = 15
+                                          lbmp: hncf * pncc
+                                            hncf: gwmz + pbbs
+                                              gwmz: pqvw + shnw
+                                                pqvw: rlsf + qccp
+                                                  rlsf: hpbp - bghp
+                                                    hpbp: vprb * rldj
+                                                      rldj: rwgj / rssd
+                                                        rwgj: mllj * bgrq
+                                                          mllj: wfhf * vvtg
+                                                          mllj result = (5 * 2) = 10
+                                                        rwgj result = (10 * 3) = 30
+                                                      rldj result = (30 / 5) = 6
+                                                    hpbp result = (4 * 6) = 24
+                                                  rlsf result = (24 - 1) = 23
+                                                pqvw result = (23 + 2) = 25
+                                                shnw: zlvv * wdwm
+                                                  wdwm: vqhj * jmmq
+                                                  wdwm result = (4 * 4) = 16
+                                                shnw result = (2 * 16) = 32
+                                              gwmz result = (25 + 32) = 57
+                                            hncf result = (57 + 4) = 61
+                                          lbmp result = (61 * 3) = 183
+                                        bmhv result = (15 * 183) = 2745
+                                      hhmh result = (2745 / 5) = 549
+                                    csmn result = (16916 + 549) = 17465
+                                  bjvv result = (2 * 17465) = 34930
+                                  qplp: fvwc * zpfp
+                                    zpfp: gzpc * lswm
+                                      gzpc: jzpb + pjvh
+                                      gzpc result = (3 + 10) = 13
+                                      lswm: pnqj + mmbl
+                                      lswm result = (6 + 1) = 7
+                                    zpfp result = (13 * 7) = 91
+                                  qplp result = (3 * 91) = 273
+                                zrbf result = (34930 - 273) = 34657
+                              zpjz result = (216 + 34657) = 34873
+                              zbdb: bzbq + plps
+                                bzbq: qwlr * bpcg
+                                bzbq result = (17 * 17) = 289
+                                plps: pqrz / bznj
+                                  pqrz: tvcj * jcwf
+                                    tvcj: mmjw * fbsr
+                                      fbsr: cnwn * tfcn
+                                      fbsr result = (3 * 3) = 9
+                                    tvcj result = (4 * 9) = 36
+                                    jcwf: lpjv + vczz
+                                      vczz: snqv + zgst
+                                        zgst: sczq * tdjf
+                                        zgst result = (5 * 5) = 25
+                                      vczz result = (4 + 25) = 29
+                                    jcwf result = (4 + 29) = 33
+                                  pqrz result = (36 * 33) = 1188
+                                plps result = (1188 / 3) = 396
+                              zbdb result = (289 + 396) = 685
+                            qnpj result = (34873 + 685) = 35558
+                          gbtf result = (35558 / 2) = 17779
+                        qzqw result = (881 + 17779) = 18660
+                      bwvn result = (18660 / 3) = 6220
+                      bzpv: jbvm * jgnb
+                        jbvm: wjlm + sdhb
+                          wjlm: pmrq + cbhs
+                            cbhs: jchz / lgvf
+                              jchz: ztqd * dznm
+                                ztqd: hwhm + fmfv
+                                ztqd result = (2 + 15) = 17
+                              jchz result = (17 * 2) = 34
+                            cbhs result = (34 / 2) = 17
+                          wjlm result = (4 + 17) = 21
+                          sdhb: vwzs * glcq
+                          sdhb result = (2 * 3) = 6
+                        jbvm result = (21 + 6) = 27
+                        jgnb: jhqf + djgp
+                        jgnb result = (16 + 20) = 36
+                      bzpv result = (27 * 36) = 972
+                    tgrl result = (6220 - 972) = 5248
+                  nfsh result = (5248 * 4) = 20992
+                  vshw: cjdh + gvhq
+                    cjdh: fncl * twsf
+                      fncl: mtls + snlm
+                        snlm: scnj * plfg
+                        snlm result = (3 * 3) = 9
+                      fncl result = (18 + 9) = 27
+                      twsf: tjph / thvf
+                        tjph: fvgr * rblf
+                          fvgr: cmpm * vhst
+                          fvgr result = (2 * 6) = 12
+                        tjph result = (12 * 4) = 48
+                      twsf result = (48 / 3) = 16
+                    cjdh result = (27 * 16) = 432
+                    gvhq: wfbg * gtvz
+                      wfbg: cbfs + nrhb
+                        nrhb: wjbt + qhgt
+                          wjbt: wrwc * btcf
+                            btcf: ncjp + trnc
+                            btcf result = (11 + 18) = 29
+                          wjbt result = (2 * 29) = 58
+                          qhgt: fhtj + wjpj
+                          qhgt result = (19 + 5) = 24
+                        nrhb result = (58 + 24) = 82
+                      wfbg result = (1 + 82) = 83
+                    gvhq result = (83 * 2) = 166
+                  vshw result = (432 + 166) = 598
+                vqgg result = (20992 - 598) = 20394
+              wjmn result = (2 * 20394) = 40788
+            whmw result = (226 + 40788) = 41014
+          fcfh result = (41014 / 2) = 20507
+        qfpr result = (193764052094285 - 20507) = 193764052073778
+        qsqj: nsdd * gvhg
+        qsqj result = (3 * 3) = 9
+      tjgv result = (193764052073778 / 9) = 21529339119308
+      vhmc: vdtv + jlvz
+        vdtv: ztmv - hfvh
+          ztmv: fvcg * fhlq
+            fhlq: ngzf + fpqj
+              ngzf: nstj * rfzb
+                rfzb: mbvq + vpjp
+                  vpjp: pjvf + pjzv
+                    pjzv: chvw * lppv
+                      chvw: pzfn + smtw
+                      chvw result = (3 + 4) = 7
+                      lppv: cvbd * gvsq
+                      lppv result = (4 * 2) = 8
+                    pjzv result = (7 * 8) = 56
+                  vpjp result = (18 + 56) = 74
+                rfzb result = (5 + 74) = 79
+              ngzf result = (5 * 79) = 395
+              fpqj: ssfj * bcrq
+                bcrq: jtvp * tbsh
+                bcrq result = (2 * 3) = 6
+              fpqj result = (4 * 6) = 24
+            fhlq result = (395 + 24) = 419
+          ztmv result = (2 * 419) = 838
+          hfvh: jmfg * lmch
+          hfvh result = (7 * 15) = 105
+        vdtv result = (838 - 105) = 733
+        jlvz: pqqc * mddb
+          pqqc: svfb * tszb
+          pqqc result = (17 * 2) = 34
+        jlvz result = (34 * 6) = 204
+      vhmc result = (733 + 204) = 937
+    rcmw result = (21529339119308 + 937) = 21529339120245
+  fzvp result = (9 * 21529339120245) = 193764052082205
+  grlb: gfvr * mlpt
+    gfvr: gpmn * jfnh
+      gpmn: fvbt * qrcn
+        fvbt: cflp + rhcb
+          cflp: jvht * lmbz
+            jvht: gzsr / sgnr
+              gzsr: chrs * mwrl
+                mwrl: rhdj / zwdf
+                  rhdj: rpfh * cmfl
+                  rhdj result = (2 * 11) = 22
+                mwrl result = (22 / 2) = 11
+              gzsr result = (2 * 11) = 22
+            jvht result = (22 / 2) = 11
+          cflp result = (11 * 2) = 22
+        fvbt result = (22 + 5) = 27
+        qrcn: mhrs * gcrb
+        qrcn result = (5 * 5) = 25
+      gpmn result = (27 * 25) = 675
+      jfnh: cqpj / cvqv
+        cqpj: cgnv + bwvr
+          cgnv: smnr * dqwt
+            smnr: wpwg * tzdg
+              tzdg: fsvv + wmmn
+                fsvv: drqw + wdsc
+                  wdsc: mmzj * vtst
+                  wdsc result = (4 * 3) = 12
+                fsvv result = (2 + 12) = 14
+                wmmn: pwbq - fbvb
+                  pwbq: mwsq / nhhv
+                    mwsq: gghv + rpht
+                      gghv: mdsz + dhvp
+                        mdsz: cwgd + lggs
+                          cwgd: zwmv * szjf
+                            szjf: ggld + gqqh
+                              ggld: gwmj * wbfv
+                                gwmj: nhlg * ztrl
+                                gwmj result = (3 * 3) = 9
+                              ggld result = (9 * 6) = 54
+                              gqqh: rshj + pfnd
+                                rshj: sbbn * fvgn
+                                rshj result = (2 * 17) = 34
+                                pfnd: srvw + cmhf
+                                  cmhf: twld + gczz
+                                  cmhf result = (4 + 2) = 6
+                                pfnd result = (13 + 6) = 19
+                              gqqh result = (34 + 19) = 53
+                            szjf result = (54 + 53) = 107
+                          cwgd result = (2 * 107) = 214
+                          lggs: lntb + zvct
+                            lntb: mntw + srth
+                              srth: zhtm + wpvg
+                              srth result = (6 + 2) = 8
+                            lntb result = (2 + 8) = 10
+                            zvct: jqbs * mfbp
+                            zvct result = (2 * 11) = 22
+                          lggs result = (10 + 22) = 32
+                        mdsz result = (214 + 32) = 246
+                        dhvp: gztp * wdpp
+                          wdpp: qdwg / rhrw
+                            qdwg: drhz + njmb
+                              drhz: dtjw / npsq
+                                dtjw: nvmh + wzcs
+                                  nvmh: tpbj + wlhz
+                                    tpbj: bgsq - pnbg
+                                      bgsq: nngz / znsm
+                                        nngz: bdft * lvvf
+                                          bdft: nqfv * jblv
+                                            jblv: rlsl - cbjv
+                                              rlsl: cmgv * shjz
+                                                shjz: tjbv + nzzp
+                                                shjz result = (4 + 3) = 7
+                                              rlsl result = (2 * 7) = 14
+                                            jblv result = (14 - 3) = 11
+                                          bdft result = (2 * 11) = 22
+                                        nngz result = (22 * 6) = 132
+                                      bgsq result = (132 / 2) = 66
+                                    tpbj result = (66 - 12) = 54
+                                    wlhz: gtph * bspm
+                                    wlhz result = (18 * 14) = 252
+                                  nvmh result = (54 + 252) = 306
+                                  wzcs: ffzq * zpcf
+                                    zpcf: jrml * gqjs
+                                    zpcf result = (2 * 4) = 8
+                                  wzcs result = (10 * 8) = 80
+                                dtjw result = (306 + 80) = 386
+                              drhz result = (386 / 2) = 193
+                              njmb: hpzs * ngfl
+                              njmb result = (11 * 3) = 33
+                            qdwg result = (193 + 33) = 226
+                          wdpp result = (226 / 2) = 113
+                        dhvp result = (3 * 113) = 339
+                      gghv result = (246 + 339) = 585
+                      rpht: dbrb + qlph
+                        qlph: rvqs * tcpg
+                          rvqs: nnpn * pmwp
+                          rvqs result = (3 * 3) = 9
+                        qlph result = (9 * 2) = 18
+                      rpht result = (13 + 18) = 31
+                    mwsq result = (585 + 31) = 616
+                  pwbq result = (616 / 4) = 154
+                wmmn result = (154 - 5) = 149
+              tzdg result = (14 + 149) = 163
+            smnr result = (2 * 163) = 326
+            dqwt: qbzg * wwqb
+              wwqb: vvlb - dnsn
+                vvlb: wqmg * zcgr
+                vvlb result = (9 * 3) = 27
+              wwqb result = (27 - 1) = 26
+            dqwt result = (2 * 26) = 52
+          cgnv result = (326 * 52) = 16952
+          bwvr: vzbf * glrr
+            glrr: tdbq * gcnw
+              gcnw: wmbh + gmnq
+                wmbh: tdwp + dnjf
+                  tdwp: hczg * fcgt
+                    hczg: dngz + cncg
+                    hczg result = (3 + 14) = 17
+                  tdwp result = (17 * 2) = 34
+                  dnjf: lmzp + mdlp
+                    lmzp: qngc + hrvn
+                      qngc: qdhh * mprq
+                      qngc result = (14 * 2) = 28
+                    lmzp result = (28 + 2) = 30
+                    mdlp: rbmr + vrvc
+                      rbmr: ffts + wjzf
+                        ffts: sdjz + gjvj
+                          sdjz: qshv + lbdg
+                            qshv: wwjb + lvzq
+                            qshv result = (3 + 3) = 6
+                            lbdg: smdf * sqml
+                              sqml: ztcz * dchw
+                              sqml result = (3 * 2) = 6
+                            lbdg result = (2 * 6) = 12
+                          sdjz result = (6 + 12) = 18
+                        ffts result = (18 + 1) = 19
+                      rbmr result = (19 + 4) = 23
+                    mdlp result = (23 + 20) = 43
+                  dnjf result = (30 + 43) = 73
+                wmbh result = (34 + 73) = 107
+                gmnq: cjws * rfng
+                  rfng: rqmj * jggq
+                  rfng result = (2 * 11) = 22
+                gmnq result = (11 * 22) = 242
+              gcnw result = (107 + 242) = 349
+            glrr result = (2 * 349) = 698
+          bwvr result = (19 * 698) = 13262
+        cqpj result = (16952 + 13262) = 30214
+      jfnh result = (30214 / 2) = 15107
+    gfvr result = (675 * 15107) = 10197225
+    mlpt: sqgl + wggc
+      sqgl: dphs * dbzc
+        dphs: tnbb * tqpm
+          tqpm: tvss + tdwn
+            tvss: rwjd / wgjr
+              rwjd: jbgs - tdqt
+                jbgs: dblr * cntg
+                  dblr: hgvg * bzqg
+                  dblr result = (8 * 4) = 32
+                  cntg: bwnn * fhbs
+                    fhbs: jmjw + bsrr
+                    fhbs result = (3 + 4) = 7
+                  cntg result = (3 * 7) = 21
+                jbgs result = (32 * 21) = 672
+                tdqt: pvpj * tsrm
+                  tsrm: jdrw * dvhs
+                    dvhs: gztz + bngh
+                      gztz: vpvc / hllw
+                        vpvc: qmbc * rjrf
+                          qmbc: psjt + bljt
+                            psjt: wdjw * nmfm
+                            psjt result = (3 * 2) = 6
+                            bljt: pblq + dqgg
+                            bljt result = (3 + 8) = 11
+                          qmbc result = (6 + 11) = 17
+                        vpvc result = (17 * 2) = 34
+                      gztz result = (34 / 2) = 17
+                      bngh: dfwj + tswl
+                      bngh result = (4 + 2) = 6
+                    dvhs result = (17 + 6) = 23
+                  tsrm result = (2 * 23) = 46
+                tdqt result = (3 * 46) = 138
+              rwjd result = (672 - 138) = 534
+            tvss result = (534 / 3) = 178
+            tdwn: rwqf * dfzg
+              rwqf: fjpb * wmnp
+                wmnp: rphb + brpf
+                wmnp result = (6 + 1) = 7
+              rwqf result = (3 * 7) = 21
+              dfzg: mvzd + wnwp
+              dfzg result = (20 + 1) = 21
+            tdwn result = (21 * 21) = 441
+          tqpm result = (178 + 441) = 619
+        dphs result = (19 * 619) = 11761
+        dbzc: dqpv * rrvc
+          dqpv: zmjr + rmld
+          dqpv result = (4 + 3) = 7
+          rrvc: nlhs + zjqh
+            zjqh: shrn * dmrw
+            zjqh result = (8 * 9) = 72
+          rrvc result = (11 + 72) = 83
+        dbzc result = (7 * 83) = 581
+      sqgl result = (11761 * 581) = 6833141
+      wggc: zwjw * cjmw
+        zwjw: qvzc * rnvd
+          rnvd: ctjb - wvpv
+            ctjb: qzlm * jlpq
+              qzlm: wrlg + bbdb
+                wrlg: jqbf * zbdq
+                  zbdq: zvsh / lrqb
+                    zvsh: htpc * gghn
+                      htpc: vjhd + rcmd
+                        rcmd: wpgt + llls
+                          llls: shmt * fchc
+                            shmt: fmch * rpms
+                            shmt result = (3 * 3) = 9
+                          llls result = (9 * 3) = 27
+                        rcmd result = (9 + 27) = 36
+                      htpc result = (5 + 36) = 41
+                    zvsh result = (41 * 2) = 82
+                  zbdq result = (82 / 2) = 41
+                wrlg result = (2 * 41) = 82
+                bbdb: gspl + qszs
+                  qszs: htbl + djds
+                    htbl: lvgp * rldq
+                      rldq: srfp - fqll
+                        srfp: snsr * nvsr
+                          nvsr: pmts + rwzc
+                            rwzc: qhdh + rsmc
+                            rwzc result = (2 + 6) = 8
+                          nvsr result = (5 + 8) = 13
+                        srfp result = (4 * 13) = 52
+                      rldq result = (52 - 5) = 47
+                    htbl result = (2 * 47) = 94
+                    djds: bjlt / nwfq
+                      bjlt: swct * rcmj
+                        swct: pfwq * vlzf
+                          pfwq: btmg * tfmq
+                          pfwq result = (4 * 2) = 8
+                        swct result = (8 * 2) = 16
+                      bjlt result = (16 * 7) = 112
+                    djds result = (112 / 4) = 28
+                  qszs result = (94 + 28) = 122
+                bbdb result = (15 + 122) = 137
+              qzlm result = (82 + 137) = 219
+            ctjb result = (219 * 3) = 657
+            wvpv: fhbv + jwlz
+              fhbv: zhhr * zpdn
+              fhbv result = (11 * 3) = 33
+              jwlz: tdbz / bmsz
+                tdbz: hpvn + dwzs
+                  hpvn: mlqt * cnvl
+                    cnvl: gbsj - shsg
+                      gbsj: rmjb - gqqs
+                        rmjb: gwbz + wnwz
+                          gwbz: ffff + bthb
+                            ffff: zfwp / grfb
+                              zfwp: ttzj * tflj
+                                ttzj: pfjh - nsnr
+                                  pfjh: zplp / prsw
+                                    zplp: wbfs + mlwg
+                                      mlwg: lrpm + bbpl
+                                        lrpm: rzjq * vqhz
+                                          vqhz: qlct + pfwl
+                                          vqhz result = (2 + 5) = 7
+                                        lrpm result = (2 * 7) = 14
+                                        bbpl: bmdj - gjsh
+                                          bmdj: ldrd * rbjr
+                                            ldrd: pznf * mvqf
+                                            ldrd result = (3 * 3) = 9
+                                          bmdj result = (9 * 3) = 27
+                                        bbpl result = (27 - 4) = 23
+                                      mlwg result = (14 + 23) = 37
+                                    zplp result = (9 + 37) = 46
+                                  pfjh result = (46 / 2) = 23
+                                ttzj result = (23 - 4) = 19
+                              zfwp result = (19 * 2) = 38
+                            ffff result = (38 / 2) = 19
+                            bthb: plzh * vzwf
+                              vzwf: vgnj * rrbc
+                              vzwf result = (13 * 2) = 26
+                            bthb result = (2 * 26) = 52
+                          gwbz result = (19 + 52) = 71
+                        rmjb result = (71 + 18) = 89
+                        gqqs: wbwm + cmds
+                          cmds: btnp + vswv
+                          cmds result = (2 + 5) = 7
+                        gqqs result = (18 + 7) = 25
+                      gbsj result = (89 - 25) = 64
+                      shsg: hdch * mjdn
+                      shsg result = (3 * 7) = 21
+                    cnvl result = (64 - 21) = 43
+                  hpvn result = (2 * 43) = 86
+                  dwzs: dstn + bhrl
+                    dstn: thzg + fvhm
+                      thzg: vvvh + ptjw
+                        ptjw: rnll * hpfl
+                        ptjw result = (4 * 2) = 8
+                      thzg result = (5 + 8) = 13
+                      fvhm: jjpb / bjgs
+                        jjpb: vzzs + nngm
+                          vzzs: dcdm * ddrb
+                            ddrb: rtsl - mpmh
+                            ddrb result = (8 - 1) = 7
+                          vzzs result = (3 * 7) = 21
+                          nngm: njns * wcfs
+                            njns: fqqs * cpzw
+                              cpzw: dgwd + dllg
+                                dllg: vwrf * dgrv
+                                dllg result = (3 * 2) = 6
+                              cpzw result = (1 + 6) = 7
+                            njns result = (7 * 7) = 49
+                            wcfs: jzsm + rbnh
+                            wcfs result = (7 + 4) = 11
+                          nngm result = (49 * 11) = 539
+                        jjpb result = (21 + 539) = 560
+                      fvhm result = (560 / 8) = 70
+                    dstn result = (13 + 70) = 83
+                    bhrl: rjtn * ztht
+                    bhrl result = (7 * 2) = 14
+                  dwzs result = (83 + 14) = 97
+                tdbz result = (86 + 97) = 183
+              jwlz result = (183 / 3) = 61
+            wvpv result = (33 + 61) = 94
+          rnvd result = (657 - 94) = 563
+        zwjw result = (2 * 563) = 1126
+        cjmw: vrlc * mzgz
+          mzgz: jjnb + szcq
+            jjnb: qnns * twwp
+              twwp: tgvg * rwlt
+                rwlt: zlqs / wfwh
+                  zlqs: zfqj * trql
+                    trql: vdgm + fwsl
+                      fwsl: jczh * vhsz
+                        vhsz: vqnn + gvdc
+                        vhsz result = (1 + 6) = 7
+                      fwsl result = (11 * 7) = 77
+                    trql result = (2 + 77) = 79
+                  zlqs result = (2 * 79) = 158
+                rwlt result = (158 / 2) = 79
+              twwp result = (2 * 79) = 158
+            jjnb result = (3 * 158) = 474
+            szcq: fwwt + zjfj
+              fwwt: tdtg * pnhv
+              fwwt result = (2 * 5) = 10
+              zjfj: sftv * cdvq
+                sftv: pwbl * slbl
+                sftv result = (3 * 3) = 9
+                cdvq: vqfn + rvwn
+                  rvwn: ppff + zqts
+                  rvwn result = (3 + 3) = 6
+                cdvq result = (1 + 6) = 7
+              zjfj result = (9 * 7) = 63
+            szcq result = (10 + 63) = 73
+          mzgz result = (474 + 73) = 547
+        cjmw result = (3 * 547) = 1641
+      wggc result = (1126 * 1641) = 1847766
+    mlpt result = (6833141 + 1847766) = 8680907
+  grlb result = (10197225 * 8680907) = 88521161883075
+*** DIFF = 193764052082205 - 88521161883075 = 105242890199130
+root result = (193764052082205 = 88521161883075) = 0
+root: 0
+

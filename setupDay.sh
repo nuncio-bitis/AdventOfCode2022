@@ -35,6 +35,7 @@ else
 
     echo "Data files..."
     cp -v test.txt ${newDataFile}
+    chmod 664 ${newDataFile}
 fi
 
 echo

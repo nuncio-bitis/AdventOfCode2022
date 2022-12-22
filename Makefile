@@ -63,7 +63,7 @@ LDFLAGS = -pthread
 
 OBJ_TARGETS =
 
-CXX_TARGETS = day21
+CXX_TARGETS = day00
 
 #-------------------------------------------------------------------------------
 

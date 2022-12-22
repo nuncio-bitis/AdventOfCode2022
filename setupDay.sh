@@ -34,14 +34,7 @@ else
     cat dayXX.cpp | sed -e "s/input..\.txt/input${day}\.txt/" > ${newDayFile}
 
     echo "Data files..."
-    touch ${newDataFile}
-    echo "# ENABLE" >> ${newDataFile}
-    echo "# TEST input" >> ${newDataFile}
-    echo  >> ${newDataFile}
-    echo "# DISABLE" >> ${newDataFile}
-    echo "# Real input" >> ${newDataFile}
-
-    #echo > test.txt
+    cp -v test.txt ${newDataFile}
 fi
 
 echo

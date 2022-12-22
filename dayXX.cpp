@@ -42,21 +42,21 @@ bool ignoreLine(std::string line)
         return true;
     }
     // Check if a block of input has been disabled
-    if ((line[0] == '#') && (line.find("DISABLE") != std::string::npos))
+    if ((line[0] == ';') && (line.find("DISABLE") != std::string::npos))
     {
         // std::cout << "--- INPUT DISABLED ---" << std::endl; // @DEBUG
         disblk = true;
         return true;
     }
     // Check if block disable is ended
-    if ((line[0] == '#') && (line.find("ENABLE") != std::string::npos))
+    if ((line[0] == ';') && (line.find("ENABLE") != std::string::npos))
     {
         // std::cout << "--- INPUT ENABLED ---" << std::endl; // @DEBUG
         disblk = false;
         return true;
     }
     // Check if test input
-    if (!disblk && (line[0] == '#') && (line.find("TEST") != std::string::npos))
+    if (!disblk && (line[0] == ';') && (line.find("TEST") != std::string::npos))
     {
         std::cout << "--- PROCESSING TEST INPUT ---" << std::endl; // @DEBUG
         TEST = true;
@@ -68,7 +68,7 @@ bool ignoreLine(std::string line)
         return true;
     }
     // Skip comment lines.
-    if (line[0] == '#')
+    if (line[0] == ';')
     {
         return true;
     }

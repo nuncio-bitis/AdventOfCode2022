@@ -47,7 +47,7 @@ bool Utils::ignoreLine(std::string line)
     // Skip blank lines.
     if (!s_disblk && line.length() == 0)
     {
-        std::cout << "## BLANK @ " << s_inpLineNo << std::endl; // @DEBUG
+        // std::cout << "## BLANK @ " << s_inpLineNo << std::endl; // @DEBUG
         s_blank = true;
         return true;
     }
@@ -67,6 +67,12 @@ bool Utils::ignoreLine(std::string line)
     }
     // Check if test input
     if (!s_disblk && (line[0] == ';') && (line.find("TEST") != std::string::npos))
+    {
+        std::cout << "## PROCESSING TEST INPUT @ " << s_inpLineNo << std::endl; // @DEBUG
+        s_test = true;
+        return true;
+    }
+    if (!s_disblk && (line[0] == ';') && (line.find("Test") != std::string::npos))
     {
         std::cout << "## PROCESSING TEST INPUT @ " << s_inpLineNo << std::endl; // @DEBUG
         s_test = true;

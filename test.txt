@@ -1,5 +1,0 @@
-; ENABLE
-; TEST input
-
-; DISABLE
-; Real input

@@ -34,7 +34,7 @@ else
     cat dayXX.cpp | sed -e "s/input..\.txt/input${day}\.txt/" > ${newDayFile}
 
     echo "Data files..."
-    cp -v test.txt ${newDataFile}
+    cp -v inputXX.txt ${newDataFile}
     chmod 664 ${newDataFile}
 fi
 

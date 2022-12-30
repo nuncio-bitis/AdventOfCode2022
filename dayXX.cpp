@@ -5,7 +5,7 @@
 //-----------------------------------------------------------------------------
 
 static Utils *pUtils = nullptr;
-static const char cInputFileName[] = "input25.txt";
+static const char cInputFileName[] = "inputXX.txt";
 
 static std::ifstream infile(cInputFileName);
 static bool TEST = false;

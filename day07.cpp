@@ -1,18 +1,12 @@
 //-----------------------------------------------------------------------------
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "utils.h"
 
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
 #include <tuple>
 
 //-----------------------------------------------------------------------------
 
-// static const char cInputFileName[] = "test.txt";
+static Utils *pUtils = nullptr;
 static const char cInputFileName[] = "input07.txt";
 
 static std::ifstream infile(cInputFileName);
@@ -39,7 +33,7 @@ static Directory *cwd = root;
 void processDirTree(Directory *root, std::string indent)
 {
     std::cout << indent << root->name << std::endl;
-    for (int dir=0; dir < root->dirs.size(); ++dir)
+    for (int dir=0; dir < (int)root->dirs.size(); ++dir)
     {
         processDirTree(root->dirs[dir], (indent + "...."));
         root->filesTotal += root->dirs[dir]->filesTotal;
@@ -62,21 +56,18 @@ void processInputCmd(std::string cmd, std::string arg)
         if (arg.compare("/") == 0)
         {
             cwd = root;
-            // std::cout << "* New current dir = ROOT: " << cwd->name << std::endl; // @DEBUG
         }
         else if (arg.compare("..") == 0)
         {
             cwd = cwd->parent;
-            // std::cout << "* New current dir = PARENT: " << cwd->name << std::endl; // @DEBUG
         }
         else
         {
-            for (int dir = 0; dir < cwd->dirs.size(); ++dir)
+            for (int dir = 0; dir < (int)cwd->dirs.size(); ++dir)
             {
                 if (arg.compare(cwd->dirs[dir]->name) == 0)
                 {
                     cwd = cwd->dirs[dir];
-                    // std::cout << "* New current dir: " << cwd->name << std::endl; // @DEBUG
                     break;
                 }
             }
@@ -88,9 +79,11 @@ void processInputCmd(std::string cmd, std::string arg)
     }
     else
     {
-        // std::cout << "* BAD COMMAND: '" << cmd << "' args: '" << arg << "'" << std::endl; // @DEBUG
+        std::cout << "* BAD COMMAND: '" << cmd << "' args: '" << arg << "'" << std::endl; // @DEBUG
     }
 }
+
+//-----------------------------------------------------------------------------
 
 // First word:
 // $ <command> <arg> => command ("cd <dir>", "ls")
@@ -114,13 +107,13 @@ void loadInputs(void)
     while (!infile.eof())
     {
         getline(infile, iline);
-        // Skip blank lines.
-        if (iline.length() == 0)
+        // Check if line should be ignored.
+        if (pUtils->ignoreLine(iline))
         {
-            break;
+            continue;
         }
 
-        // std::cout << iline << std::endl; // @DEBUG
+        // pUtils->DPRINTF(" > %s", iline.c_str()); // @DEBUG
 
         std::size_t sp1 = iline.find_first_of(' '); // Position of first space
         if (iline.find_first_of('$') == 0)
@@ -144,7 +137,7 @@ void loadInputs(void)
             dir->filesTotal = 0;
             dir->parent = cwd;
             cwd->dirs.push_back(dir);
-            // std::cout << "* Dir: " << cwd->name << "/" << dir->name << std::endl; // @DEBUG
+            pUtils->DPRINTF("* Dir: %s/%s", cwd->name.c_str(), dir->name.c_str()); // @DEBUG
         }
         else
         {
@@ -154,7 +147,7 @@ void loadInputs(void)
             fspec *file = new fspec;
             *file = std::make_tuple(fsize, name);
             cwd->files.push_back(file);
-            // std::cout << "* File: " << cwd->name << "/" << name << " (" << fsize << " bytes)" << std::endl; // @DEBUG
+            pUtils->DPRINTF("* File: %s/%s (%d)", cwd->name.c_str(), name.c_str(), fsize); // @DEBUG
         }
     }
 
@@ -176,7 +169,7 @@ void part_1(Directory *root)
         std::cout << "Found: " << root->name << ", " << root->filesTotal << std::endl;
         total100s += root->filesTotal;
     }
-    for (int dir=0; dir < root->dirs.size(); ++dir)
+    for (int dir=0; dir < (int)root->dirs.size(); ++dir)
     {
         part_1(root->dirs[dir]);
     }
@@ -196,7 +189,7 @@ void findSmallest(Directory *root, uint32_t min)
         std::cout << "Found: " << root->name << ", " << root->filesTotal << std::endl;
         smDir = root->filesTotal;
     }
-    for (int dir=0; dir < root->dirs.size(); ++dir)
+    for (int dir=0; dir < (int)root->dirs.size(); ++dir)
     {
         findSmallest(root->dirs[dir], min);
     }
@@ -227,6 +220,7 @@ int main(int argc, char *argv[])
     std::cout << std::endl;
     //-------------------------------------------------------------------------
 
+    pUtils = Utils::getInstance();
     loadInputs();
 
     total100s = 0;

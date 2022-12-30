@@ -1,79 +1,14 @@
 //-----------------------------------------------------------------------------
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <utility>
-#include <iterator>
+#include "utils.h"
 
 //-----------------------------------------------------------------------------
 
-// static const char cInputFileName[] = "test.txt";
-static const char cInputFileName[] = "input13.txt";
+static Utils *pUtils = nullptr;
+static const char cInputFileName[] = "input25.txt";
 
 static std::ifstream infile(cInputFileName);
 static bool TEST = false;
-
-//-----------------------------------------------------------------------------
-
-void printIntVec(std::vector<int> v)
-{
-    for (auto x : v)
-    {
-        printf(" %2d", x);
-    }
-    std::cout << std::endl;
-}
-
-//-----------------------------------------------------------------------------
-
-static bool disblk = false;
-
-bool ignoreLine(std::string line)
-{
-    // Skip blank lines.
-    if (line.length() == 0)
-    {
-        return true;
-    }
-    // Check if a block of input has been disabled
-    if ((line[0] == ';') && (line.find("DISABLE") != std::string::npos))
-    {
-        // std::cout << "--- INPUT DISABLED ---" << std::endl; // @DEBUG
-        disblk = true;
-        return true;
-    }
-    // Check if block disable is ended
-    if ((line[0] == ';') && (line.find("ENABLE") != std::string::npos))
-    {
-        // std::cout << "--- INPUT ENABLED ---" << std::endl; // @DEBUG
-        disblk = false;
-        return true;
-    }
-    // Check if test input
-    if (!disblk && (line[0] == ';') && (line.find("TEST") != std::string::npos))
-    {
-        std::cout << "--- PROCESSING TEST INPUT ---" << std::endl; // @DEBUG
-        TEST = true;
-        return true;
-    }
-    // Skip disabled block
-    if (disblk)
-    {
-        return true;
-    }
-    // Skip comment lines.
-    if (line[0] == ';')
-    {
-        return true;
-    }
-    return false;
-}
 
 //-----------------------------------------------------------------------------
 
@@ -85,30 +20,26 @@ void loadInputs(void)
         exit(1);
     }
 
-    TEST = false;
-
     std::cout << "Loading inputs..." << std::endl;
     std::string iline;
     while (!infile.eof())
     {
         getline(infile, iline);
         // Check if line should be ignored.
-        if (ignoreLine(iline))
+        if (pUtils->ignoreLine(iline))
         {
             continue;
         }
+        TEST = pUtils->isTest();
 
         // @TODO
 
-        // @DEBUG
-        if (TEST)
-        {
-            std::cout << " > " << iline << std::endl;
-        }
+        pUtils->DPRINTF(" > %s", iline.c_str()); // @DEBUG
     }
 
     std::cout << std::endl;
     std::cout << "Inputs info: " << std::endl;
+    std::cout << "  " << pUtils->nInputLines() << " input lines processed." << std::endl;
 }
 
 //-----------------------------------------------------------------------------
@@ -136,6 +67,7 @@ int main(int argc, char *argv[])
     std::cout << std::endl;
     //-------------------------------------------------------------------------
 
+    pUtils = Utils::getInstance();
     loadInputs();
 
     // std::cout << std::endl;

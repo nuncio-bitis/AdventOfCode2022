@@ -51,7 +51,7 @@ GCC      = /usr/bin/gcc
 GXX      = /usr/bin/g++
 LINK     = /usr/bin/g++
 
-LIB_FILE=
+LIB_FILE =
 
 INCLUDES += -I /usr/include
 LIBS += -lpthread -lxml2
@@ -61,20 +61,19 @@ CFLAGS = -O2 -g -Wall  -fmessage-length=0 $(INCLUDES) $(LIBDIRS) $(LIBS)
 
 LDFLAGS = -pthread
 
-OBJ_TARGETS =
+OBJ_TARGETS = utils.o
 
-CXX_TARGETS = day25
+CXX_TARGETS = dayXX
 
 #-------------------------------------------------------------------------------
 
 .cpp:.o
-	$(CXX) $(CXXFLAGS) $< -o $@ $(LIBS)
+	$(CXX) $(CXXFLAGS) $< -o $@ $(OBJ_TARGETS) $(LIBS)
 
 .c:.o
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-#all: begin ctargs otargs end
-all: begin ctargs end
+all: begin otargs ctargs end
 
 begin:
 	@echo "--------------------------------------------------------------------------------"

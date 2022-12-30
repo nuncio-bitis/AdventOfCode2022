@@ -1,21 +1,12 @@
 //-----------------------------------------------------------------------------
 
-#include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <string.h>
+#include "utils.h"
 #include <math.h>
-
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <sstream>
 #include <algorithm>
 
 //-----------------------------------------------------------------------------
 
-// static const char cInputFileName[] = "test.txt";
+static Utils *pUtils = nullptr;
 static const char cInputFileName[] = "input11.txt";
 
 static std::ifstream infile(cInputFileName);
@@ -53,6 +44,8 @@ void initMonkey(monkeySpec *m)
 
 void printMonkey(monkeySpec *m)
 {
+    if (!pUtils->debugEnabled()) return;
+
     std::cout << std::endl;
     std::cout << "Monkey Info: " << m->num << std::endl;
     std::cout << "Items:";
@@ -70,6 +63,8 @@ void printMonkey(monkeySpec *m)
 
 void printMonkeyItems(void)
 {
+    // if (!pUtils->debugEnabled()) return;
+
     for (auto m : monkeys)
     {
         std::cout << "Monkey " << m->num << " has " << m->items.size() << " items:";
@@ -83,6 +78,8 @@ void printMonkeyItems(void)
 
 void printMonkeyInspections(void)
 {
+    // if (!pUtils->debugEnabled()) return;
+
     std::vector<int64_t> insp;
     for (auto m : monkeys)
     {
@@ -115,20 +112,23 @@ void loadInputs(void)
     while (!infile.eof())
     {
         getline(infile, iline);
-        // Blank line = start new monkey
-        if (iline.length() == 0)
+        // Check if line should be ignored.
+        if (pUtils->ignoreLine(iline))
         {
-            // End monkey : store it.
-            monkey->num = mnum++;
-            monkeys.push_back(monkey);
-            printMonkey(monkey); // @DEBUG
+            // Check if it was a blank line = start new monkey
+            if (pUtils->isBlank())
+            {
+                // End monkey : store it.
+                monkey->num = mnum++;
+                monkeys.push_back(monkey);
+                printMonkey(monkey); // @DEBUG
 
-            // Init new one
-            monkey = new monkeySpec();
-            initMonkey(monkey);
+                // Init new one
+                monkey = new monkeySpec();
+                initMonkey(monkey);
+            }
             continue;
         }
-        // std::cout << iline << std::endl; // @DEBUG
 
         size_t fpos = 0;
         if (iline.find("Monkey") != std::string::npos)
@@ -228,26 +228,20 @@ void part_1(void)
         {
             monkeySpec *m = monkeys[mnum];
 
-            // std::cout << "Monkey " << m->num << std::endl; // @DEBUG
             for (std::vector<int64_t>::iterator item = m->items.begin(); item != m->items.end();)
             {
                 // Monkey inspects item
                 m->numInspected++;
 
-                // std::cout << "  item=" << *item; // @DEBUG
-
                 // Compute new worry level.
                 int64_t worry = permformOp(m->op, *item) / 3;
-                // std::cout << " worry=" << worry; // @DEBUG
 
                 if (std::fmod(worry, m->testDiv) == 0)
                 {
-                    // std::cout << " => " << m->trueToMonkey << std::endl; // @DEBUG
                     monkeys[m->trueToMonkey]->items.push_back(worry);
                 }
                 else
                 {
-                    // std::cout << " => " << m->falseToMonkey << std::endl; // @DEBUG
                     monkeys[m->falseToMonkey]->items.push_back(worry);
                 }
                 item = m->items.erase(m->items.begin());
@@ -277,21 +271,16 @@ void part_2(void)
         {
             monkeySpec *m = monkeys[mnum];
 
-            // std::cout << "Monkey " << m->num << std::endl; // @DEBUG
             for (std::vector<int64_t>::iterator item = m->items.begin(); item != m->items.end();)
             {
                 // Monkey inspects item
                 m->numInspected++;
 
-                // std::cout << "  item=" << *item; // @DEBUG
-
                 // Compute new worry level.
                 int64_t worry = permformOp(m->op, *item);
-                // std::cout << " worry=" << worry; // @DEBUG
 
                 worry = (worry % LCM); // @XXX
 
-                // printf(" worry=%ld, testDiv=%d, fmod=%ld\n", worry, m->testDiv, fmod(worry, m->testDiv)); // @DEBUG
                 if ((worry % m->testDiv) == 0)
                 {
                     monkeys[m->trueToMonkey]->items.push_back(worry);
@@ -320,15 +309,16 @@ int main(int argc, char *argv[])
     std::cout << std::endl;
     //-------------------------------------------------------------------------
 
+    pUtils = Utils::getInstance();
     loadInputs();
     std::cout << std::endl;
     std::cout << "Inputs loaded; " << monkeys.size() << " monkeys loaded." << std::endl;
     printMonkeyItems();
 
-    // std::cout << std::endl;
-    // part_1();
-    // std::cout << std::endl;
-    // printMonkeyInspections();
+    std::cout << std::endl;
+    part_1();
+    std::cout << std::endl;
+    printMonkeyInspections();
 
     std::cout << std::endl;
     part_2();

@@ -1,5 +1,7 @@
 ; DISABLE
 ; TEST input
+; DEBUG
+
         ...#
         .#..
         #...
